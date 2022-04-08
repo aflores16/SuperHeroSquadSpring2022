@@ -110,4 +110,56 @@ public class ReadTextFile {
 
         return null;
     }
+    
+    
+	/**
+	 * Method: createItems()
+	 * 
+	 * This method creates and initialize all items found in the 
+	 * Artifact.txt store them in the HashMap
+	 * 
+	 * @return a list of items which are then stored in items variable
+	 */
+	public static HashMap<String, Item> createItems() {
+		
+		//Try and catch blocks to handle exceptions
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader("Artifact.txt"));
+			String line = reader.readLine();
+			HashMap<String, Item> items = new HashMap<String, Item>();
+
+			while (line != null) { 
+				
+				String name = line;
+				name = name.toLowerCase();
+
+				line = reader.readLine();
+
+				String location = line.trim();
+
+				line = reader.readLine();
+
+				String description = "";
+
+				while (!line.equals("END")) { 
+					
+					// add each line to overall string for description
+					itemDescription = description + line + '\n';
+					line = reader.readLine();
+				}
+
+				// put new item object and items name in HashMap
+				items.put(name, new Item(itemId, itemName, itemType, itemDescription, itemFeatures, ItemUsage, itemStrength));
+
+				line = reader.readLine(); // move line to beginning of next item
+											
+			}
+			return items;
+			
+		} 
+		catch (IOException e) {
+			System.out.println("File could not be accessed, please try again!");
+		}
+		return null;
+	}
 }
