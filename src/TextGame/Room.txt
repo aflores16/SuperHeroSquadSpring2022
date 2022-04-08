@@ -1,4 +1,4 @@
-Main Hallway 1 (Name of Room)
+Main Hallway 1
 0 (Room #)
 1 (Deck #)
 R00 (Room ID)
