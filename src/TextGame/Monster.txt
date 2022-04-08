@@ -1,0 +1,148 @@
+1
+engine room
+Lower 6
+15
+5-8
+100
+key card
+75
+Food
+This seems to
+be one of
+Victor’s
+Lower 6. He
+probably has
+information
+on him. 
+END
+2
+State Room 2
+Lower 5 
+20
+7-10
+100
+keycard
+80
+Food
+There is the
+Lower 5.
+Looks like
+the Lower 6
+wasn’t lying.
+Time to get
+some more
+info.
+END 
+3
+Upper Pool Deck
+Lower 4
+30
+8-13
+100
+key card
+82
+Food
+The Lower 4.
+He seems 
+stronger than
+the previous
+two. You
+should be on
+your guard.
+END
+4
+Ocean View Room 1
+Lower 3
+45
+8-14
+100
+key card
+85
+Food
+The Lower 3.
+He doesn’t
+seem to be
+too much
+stronger than
+the ones before, but you
+should be
+careful.
+END
+5
+Night Club
+Lower 2
+50
+9-14
+100
+key card
+88 
+Food
+This guy
+seems to be
+similar in
+strengthen to
+the Lower 3. 
+END
+6
+Captains Cabin
+Lower 1
+55
+10-14
+100 
+key card
+90
+Food 
+He is the
+strongest out
+of the 6. You
+need to be
+careful. You
+realize that
+defeating this
+guy will give
+you the location to Victor.
+END
+8
+Crew Cabing 1
+Crew Mate
+10
+7
+20
+Food
+A simple
+crew mate. 
+END
+9
+Engine Room, Crew Cabin 1, State Room 1, Crew Cabin 2, State Room 2, Lower Deck Pool,
+OceanView Room 1, Fitness Center, Upper Deck Pool,Captain Cabin, OceanView Room 2, Casino,
+Night Club, Casino, Comedy Club
+Lacky
+10
+5
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+10
+Bridge
+Victor
+NA
+NA
+175
+15
+There is your
+target. Victor
+has been terrorizing this
+part of the
+solar system
+for too long.
+Take him
+out. 
+
+
+
+
+
+
+
