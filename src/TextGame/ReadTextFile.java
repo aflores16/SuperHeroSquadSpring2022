@@ -130,26 +130,36 @@ public class ReadTextFile {
 
 			while (line != null) { 
 				
-				String name = line;
-				name = name.toLowerCase();
-
+				String itemId = line;
 				line = reader.readLine();
-
-				String location = line.trim();
-
+				
+				String itemName = line;
 				line = reader.readLine();
-
-				String description = "";
-
+				
+				String itemType = line;
+				line = reader.readLine();
+				
+				String itemDescription = "";
+				
+				String itemFeatures = line;
+				line = reader.readLine();
+				
+				String itemUsage = line;
+				line = reader.readLine();
+				
+				String strength = line;
+				Double itemStrength = Double.valueOf(strength);
+				line = reader.readLine();
+				
 				while (!line.equals("END")) { 
 					
 					// add each line to overall string for description
-					itemDescription = description + line + '\n';
+					itemDescription = itemDescription + line + '\n';
 					line = reader.readLine();
 				}
 
 				// put new item object and items name in HashMap
-				items.put(name, new Item(itemId, itemName, itemType, itemDescription, itemFeatures, ItemUsage, itemStrength));
+				items.put(itemName, new Item(itemId, itemName, itemType, itemDescription, itemFeatures, itemUsage, itemStrength));
 
 				line = reader.readLine(); // move line to beginning of next item
 											
