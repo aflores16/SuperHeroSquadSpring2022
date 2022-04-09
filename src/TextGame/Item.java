@@ -11,6 +11,7 @@ public class Item {
 	//Private data fields defining Item
 	private String itemId;
 	private String itemName;
+	private String location;
 	private String itemType;
 	private String itemDescription;
 	private String itemFeatures;
@@ -18,11 +19,12 @@ public class Item {
 	private double itemStrength;
 	
 	//All args constructor
-	public Item(String itemId, String itemName, String itemType, String itemDescription, String itemFeatures, String itemUsage, double itemStrength) {
+	public Item(String itemId, String itemName, String location, String itemType, String itemDescription, String itemFeatures, String itemUsage, double itemStrength) {
 		this.itemId = itemId;
 		this.itemName = itemName;
+		this.location =location;
 		this.itemType = itemType;
-		this.itemDescription = itemDescription
+		this.itemDescription = itemDescription;
 		this.itemFeatures = itemFeatures;
 		this.itemUsage = itemUsage;
 		this.itemStrength = itemStrength;	
@@ -117,6 +119,10 @@ public class Item {
 	 */
 	public void setItemStrength(double itemStrength) {
 		this.itemStrength = itemStrength;
+	}
+
+	public String getLocation() {
+		return location;
 	}
 	
 	@Override
