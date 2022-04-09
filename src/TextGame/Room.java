@@ -13,7 +13,9 @@ public class Room {
     private HashMap<String, Item> item = new HashMap<String, Item>();
     private HashMap<String, Monster> monster = new HashMap<String, Monster>();
 
-    public Room(String name, String roomNum, String deckNum, String roomID, String description, String[] neighbors) {
+    public Room(String name, String roomNum, String deckNum,
+                String roomID, String description, String[] neighbors,
+                HashMap<String, Item> items, HashMap<String, Monster> monsters) {
         name_ = name;
         description_ = description;
         roomNum_ = roomNum;
@@ -21,29 +23,29 @@ public class Room {
         roomID_ = roomID;
         neighbors_ = neighbors;
 
-       // setItems(items);
-       // setMonsters(monsters);
+        setItems(items);
+        setMonsters(monsters);
     }
 
 
-    // Add this when monster and Items are added and completed
-//    public void setItems(HashMap<String, Item> items) {
-//        for (Map.Entry<String, Item> ex : items.entrySet()) {
-//            //if items location matches rooms name
-//            if (ex.getValue().getLocation().equals(name_)) {
-//
-//                item.put(ex.getKey(), ex.getValue());
-//            }
-//        }
-//    }
-//    public void setMonsters(HashMap<String, Monster> monsters){
-//        for(Map.Entry<String, Monster> ex : monsters.entrySet()){
-//            if (ex.getValue().getLocation().equals(name_)){
-//
-//                monster.put(ex.getKey(), ex.getValue());
-//            }
-//        }
-//    }
+
+    public void setItems(HashMap<String, Item> items) {
+        for (Map.Entry<String, Item> ex : items.entrySet()) {
+            //if items location matches rooms name
+            if (ex.getValue().getLocation().equals(name_)) {
+
+                item.put(ex.getKey(), ex.getValue());
+            }
+        }
+    }
+    public void setMonsters(HashMap<String, Monster> monsters){
+        for(Map.Entry<String, Monster> ex : monsters.entrySet()){
+            if (ex.getValue().getLocation_().equals(name_)){
+
+                monster.put(ex.getKey(), ex.getValue());
+            }
+        }
+    }
 
     public String[] getNeighbors() {
         return neighbors_;
