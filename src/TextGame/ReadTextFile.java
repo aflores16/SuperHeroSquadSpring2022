@@ -6,10 +6,10 @@ import java.io.IOException;
 import java.util.HashMap;
 
 public class ReadTextFile {
-    public static HashMap<String, Room> createRooms(HashMap <String, Monster> monsters) {
+    public static HashMap<String, Room> createRooms(HashMap<String, Item> items ,HashMap <String, Monster> monsters) {
         try {
             // creating a reader to read the text file
-            BufferedReader reader = new BufferedReader(new FileReader("Room.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader(".idea/Room.txt"));
             String line = reader.readLine();
             HashMap<String, Room> rooms = new HashMap<String, Room>();
 
@@ -42,7 +42,7 @@ public class ReadTextFile {
                 }
 
                 // put new room object and rooms name in HashMap
-                rooms.put(name, new Room(name, roomNum,deckNum,roomId,description, neighbors, monsters));
+                rooms.put(name, new Room(name, roomNum,deckNum,roomId,description, neighbors,  items, monsters));
 
                 line = reader.readLine(); // move line to beginning of next room
 
@@ -135,6 +135,9 @@ public class ReadTextFile {
 				
 				String itemName = line;
 				line = reader.readLine();
+
+				String location = line;
+				line = reader.readLine();
 				
 				String itemType = line;
 				line = reader.readLine();
@@ -159,7 +162,7 @@ public class ReadTextFile {
 				}
 
 				// put new item object and items name in HashMap
-				items.put(itemName, new Item(itemId, itemName, itemType, itemDescription, itemFeatures, itemUsage, itemStrength));
+				items.put(itemName, new Item(itemId, itemName, location, itemType, itemDescription, itemFeatures, itemUsage, itemStrength));
 
 				line = reader.readLine(); // move line to beginning of next item
 											
