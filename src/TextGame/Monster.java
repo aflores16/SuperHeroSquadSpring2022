@@ -1,32 +1,35 @@
 package TextGame;
 
 public class Monster {
-    private String name_;
+    private String monsterName_;
+	private String roomName_;
     private int health_;
-    private int attack_ ;
+    private int lowAttack_ ;
+	private int highAttack_;
     private String location_;
     private String description_;
     private String itemID_;
-    private double chance_;
-    private String item_;
+    private double chanceOfFood;
+    private String foodName_;
     private double chanceOfKey_;
     private String keyName_;
 
-    public Monster( String name, int health, int attack, String location, String description, String itemID,
-            double chance, String item, double chanceOfKey, String keyName ){
-        name_ = name;
-        health_ = health;
-        attack_ = attack;
-        location_ =location;
-        description_ = description;
-        itemID_ = itemID;
-        chance_ = chance;
-        item_ = item;
-        chanceOfKey_ = chanceOfKey;
-        keyName_ = keyName;
+    public Monster(int id, String location, String name, int hp,int lowAttk, int highAttk, keyChance,
+	keyName,foodChance,foodName,description){
+		itemID_ = id;
+		location_=location;
+		monsterName_ = name;
+		health_ = health;
+		lowAttack_ = lowAttk;
+		highAttack_ = highAttk;
+		chanceOfKey_ = keyChance;
+		keyName_ =  keyName;
+		chanceOfFood = foodChance;
+		foodName_ = foodName;
+		description_ =description;
     }
 
-    public String getName_() {
+    public String getMonsterName_() {
         return name_;
     }
 
@@ -34,8 +37,12 @@ public class Monster {
         return health_;
     }
 
-    public int getAttack_() {
-        return attack_;
+    public int getLowAttack_() {
+        return lowAttack_;
+    }
+	
+	public int getHighAttack_() {
+        return highAttack_;
     }
 
     public String getLocation_() {
@@ -50,16 +57,17 @@ public class Monster {
         return itemID_;
     }
 
-    public double getChance_() {
-        return chance_;
+    public double getChanceOfFood_() {
+        return chanceOfFood_;
+    }
+	
+	 public String getKeyName_() {
+        return keyName_;
     }
 
-    public String getItem_() {
-        return item_;
-    }
-
-    public double getChanceOfKey_() {
-        return chanceOfKey_;
+ 
+    public double getFoodName_() {
+        return foodName__;
     }
 
     public String getKeyName_() {
