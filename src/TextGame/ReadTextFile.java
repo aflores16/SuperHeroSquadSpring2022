@@ -75,23 +75,34 @@ public class ReadTextFile {
                 Integer health =Integer.valueOf(hp);
                 line = reader.readLine();
 
-                String attack = line;
-                Integer attack_ =Integer.valueOf(attack);
+                String lowAttack = Integer.parseInt(line);
+                line = reader.readLine();
+				
+				String highAttack = Integer.parseInt(line);
+				line = reader.readLine();
+				
+				String keyChance = Integer.parseInt(line);
+				line = reader.readLine();
+				
+				String keyName = line;
                 line = reader.readLine();
 
-                String foodChance = line;
-                Integer chance = Integer.valueOf(foodChance);
+                String foodChance = Integer.parseInt(line);
                 line = reader.readLine();
 
                 String item = line;
                 line = reader.readLine();
-
-                String keyChance = line;
-                Integer chanceOfKey = Integer.valueOf(keyChance);
-                line = reader.readLine();
-
-                String keyName = line;
-                line = reader.readLine();
+               
+                if(line.equals(9)){
+					 String[] neighbors = line.split(",");
+                for (int i = 0; i < neighbors.length; i++) { // travers
+                    // neighbors
+                    // trim each name
+                    neighbors[i] = neighbors[i].trim();
+                }
+				
+				}
+				line = reader.readLine();
 
                 String description = "";
 

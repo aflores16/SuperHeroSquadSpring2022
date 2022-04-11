@@ -2,7 +2,8 @@
 engine room
 Lower 6
 15
-5-8
+5
+8
 100
 key card
 75
@@ -19,7 +20,8 @@ END
 State Room 2
 Lower 5 
 20
-7-10
+7
+10
 100
 keycard
 80
@@ -37,7 +39,8 @@ END
 Upper Pool Deck
 Lower 4
 30
-8-13
+8
+13
 100
 key card
 82
@@ -54,7 +57,8 @@ END
 Ocean View Room 1
 Lower 3
 45
-8-14
+8
+14
 100
 key card
 85
@@ -72,7 +76,8 @@ END
 Night Club
 Lower 2
 50
-9-14
+9
+14
 100
 key card
 88 
@@ -87,7 +92,8 @@ END
 Captains Cabin
 Lower 1
 55
-10-14
+10
+14
 100 
 key card
 90
@@ -107,6 +113,7 @@ Crew Cabing 1
 Crew Mate
 10
 7
+7
 20
 Food
 A simple
@@ -119,6 +126,7 @@ Night Club, Casino, Comedy Club
 Lacky
 10
 5
+5
 30
 Ammo
 One of Victor’s Lackies.
@@ -129,6 +137,7 @@ Bridge
 Victor
 NA
 NA
+175
 175
 15
 There is your
