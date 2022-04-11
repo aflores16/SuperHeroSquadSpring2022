@@ -5,7 +5,8 @@ import java.util.Map;
 
 public class Player {
     private static String location;
-    private double Health = 100;
+    private double health = 100;
+    private String playerName;
    // private double attackDamage = 0;
     private static Map<String, Item> inventory = new HashMap<String, Item>();
 
@@ -41,6 +42,29 @@ public class Player {
         }
     }
 
+    public void consume (String item){
+        Item temp = null;
+        double healing ;
+        // checks if player has item in inventory
+        if (inventory.containsKey(item)){
+            temp = inventory.get(item);
+            // if player is not 100 and item is a food
+            if (!(health == 100) && temp.getItemFeatures().equals("Food")){
+                // healing will be item percentage time total health
+                healing = health * temp.getItemStrength();
+                // add current health and healing to get new health points
+                health = health + healing;
+                System.out.println(playerName + " has consumed " + temp.getItemName() + "and current health is at " + health);
+
+            }else {
+                System.out.println("Your current health is already at 100");
+            }
+
+        }else {
+            System.out.println("food item is not present in inventory");
+        }
+    }
+
     public void drop(String item, HashMap<String, Room> rooms) {
         Item temp = null;
 
@@ -56,19 +80,6 @@ public class Player {
             System.out.println("Sorry, " + item + " is not in your inventory.");
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     // created a movement function to allow player to travel through rooms based on exits
     public void movement(String direction, HashMap<String, Room> rooms) {
