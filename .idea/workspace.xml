@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a53c17c-9262-4e15-a871-d8764d3cce7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TextGame/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextGame/Monster.java" afterDir="false" />
-    </list>
+    <list default="true" id="8a53c17c-9262-4e15-a871-d8764d3cce7a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +50,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650060308203</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added to new variables to monster file">
+      <created>1650061440003</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1650061440003</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -69,17 +73,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="editted the monster file" />
-    <option name="LAST_COMMIT_MESSAGE" value="editted the monster file" />
+    <MESSAGE value="added to new variables to monster file" />
+    <option name="LAST_COMMIT_MESSAGE" value="added to new variables to monster file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="602" y="323" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1650060054392">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="602" y="323" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.864@0.0.1536.864" timestamp="1650060054392" />
-    <state x="199" y="29" key="CommitChangelistDialog2" timestamp="1650061423689">
+    <state x="199" y="29" key="CommitChangelistDialog2" timestamp="1650061438415">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="199" y="29" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1650061423689" />
+    <state x="199" y="29" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1650061438415" />
+    <state x="361" y="167" key="Vcs.Push.Dialog.v2" timestamp="1650061475215">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="167" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1650061475215" />
+    <state x="414" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1650062011355">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="414" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1650062011355" />
     <state x="365" y="226" key="git4idea.merge.GitPullDialog" timestamp="1650061293973">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
