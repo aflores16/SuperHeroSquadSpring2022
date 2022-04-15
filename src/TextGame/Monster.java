@@ -64,6 +64,7 @@ public class Monster {
 	 public String getKeyName() {
         return keyName_;
     }
+    public String getRoomName_(){ return roomName_;}
 
  
     public String getFoodName_() {
