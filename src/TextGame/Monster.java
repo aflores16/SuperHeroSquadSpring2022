@@ -8,18 +8,18 @@ public class Monster {
 	private int highAttack_;
     private String location_;
     private String description_;
-    private String itemID_;
+    private int itemID_;
     private double chanceOfFood;
     private String foodName_;
     private double chanceOfKey_;
     private String keyName_;
 
-    public Monster(int id, String location, String name, int hp,int lowAttk, int highAttk, keyChance,
-	keyName,foodChance,foodName,description){
+    public Monster(int id, String location, String name, int hp,int lowAttk, int highAttk, double keyChance,
+	String keyName, double foodChance, String foodName, String description){
 		itemID_ = id;
 		location_=location;
 		monsterName_ = name;
-		health_ = health;
+		health_ = hp;
 		lowAttack_ = lowAttk;
 		highAttack_ = highAttk;
 		chanceOfKey_ = keyChance;
@@ -30,7 +30,7 @@ public class Monster {
     }
 
     public String getMonsterName_() {
-        return name_;
+        return monsterName_;
     }
 
     public int getHealth_() {
@@ -53,21 +53,21 @@ public class Monster {
         return description_;
     }
 
-    public String getItemID_() {
+    public int getItemID_() {
         return itemID_;
     }
 
     public double getChanceOfFood_() {
-        return chanceOfFood_;
+        return chanceOfFood;
     }
 	
-	 public String getKeyName_() {
+	 public String getKeyName() {
         return keyName_;
     }
 
  
-    public double getFoodName_() {
-        return foodName__;
+    public String getFoodName_() {
+        return foodName_;
     }
 
     public String getKeyName_() {
