@@ -14,8 +14,8 @@ public class Monster {
     private double chanceOfKey_;
     private String keyName_;
 
-    public Monster(int id, String location, String name, int hp,int lowAttk, int highAttk, double keyChance,
-	String keyName, double foodChance, String foodName, String description){
+    public Monster(int id, String location, String name, int hp, int lowAttk, int highAttk, double keyChance,
+                   String keyName, double foodChance, String foodName, String description){
 		itemID_ = id;
 		location_=location;
 		monsterName_ = name;
