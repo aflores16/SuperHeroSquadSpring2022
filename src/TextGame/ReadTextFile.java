@@ -62,7 +62,8 @@ public class ReadTextFile {
             HashMap<String, Monster> monsters = new HashMap<String, Monster> ();
 
             while (line != null){
-                String itemID = line ;
+
+                int id = Integer.parseInt(line);
                 line = reader.readLine();
 
                 String location = line;
@@ -71,23 +72,27 @@ public class ReadTextFile {
                 String name = line;
                 line = reader.readLine();
 
-                String hp = line;
-                Integer health =Integer.valueOf(hp);
+
+                Integer hp =Integer.valueOf(line);
                 line = reader.readLine();
 
-                String lowAttack = Integer.parseInt(line);
+                int lowAttack = Integer.parseInt(line);
                 line = reader.readLine();
 				
-				String highAttack = Integer.parseInt(line);
+				int highAttack = Integer.parseInt(line);
 				line = reader.readLine();
 				
-				String keyChance = Integer.parseInt(line);
+				int keyChance = Integer.parseInt(line);
 				line = reader.readLine();
 				
 				String keyName = line;
                 line = reader.readLine();
 
-                String foodChance = Integer.parseInt(line);
+                int foodChance = Integer.parseInt(line);
+                line = reader.readLine();
+
+                String foodName = line;
+
                 line = reader.readLine();
 
                 String item = line;
@@ -110,7 +115,8 @@ public class ReadTextFile {
                     description = description + line + '\n';
                     line = reader.readLine();
                 }
-                monsters.put(name, new Monster(name, health , attack_,location,description, itemID, chance, item, chanceOfKey, keyName ));
+                monsters.put(name, new Monster( id, location,  name,  hp, lowAttack, highAttack, keyChance,
+                 keyName, foodChance,  foodName,  description));
 
                 line = reader.readLine();
             }
