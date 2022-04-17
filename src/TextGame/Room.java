@@ -26,7 +26,49 @@ public class Room {
         setItems(items);
         setMonsters(monsters);
     }
+    public void look() {
+        //System.out.println(description_);
 
+        System.out.println("You can exit to the ");
+
+        if (!neighbors_[0].equals("-")) { // if there is spot to north
+            System.out.print("NORTH, ");
+        }
+
+        if (!neighbors_[1].equals("-")) { // if there is spot to south
+            System.out.print("SOUTH, ");
+        }
+
+        if (!neighbors_[2].equals("-")) { // if there is spot to east
+            System.out.print("EAST, ");
+        }
+
+        if (!neighbors_[3].equals("-")) { // if there is spot to west
+            System.out.print("WEST");
+        }
+
+        System.out.println();
+        System.out.println();
+
+        if (item.isEmpty()) { // if collection of items in room is empty
+            System.out.println("No items are located in this room, \n" + "Try a different room" );
+        } else {
+            for (Map.Entry<String, Item> ex : item.entrySet()) {
+                System.out.print(ex.getKey() + ", ");
+            }
+            System.out.println(" are in the room.");
+        }
+        if (monster.isEmpty()){
+            System.out.println();
+            System.out.println("There are no monsters in this room");
+        } else {
+            for (Map.Entry<String,Monster >ex : monster.entrySet()){
+                System.out.println();
+                System.out.print(ex.getKey() + ", " + ex.getValue().getDescription_());
+            }
+
+        }
+    }
 
 
     public void setItems(HashMap<String, Item> items) {
