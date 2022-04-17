@@ -6,15 +6,56 @@ import java.util.Map;
 public class Player {
     private static String location;
     private double health = 100;
+    private double damage = 0.0 ;
     private String playerName;
-   // private double attackDamage = 0;
     private static Map<String, Item> inventory = new HashMap<String, Item>();
+    private int lives = 3;
 
-    // setting a location to start
+    /**
+     * Andy F.
+     * created a player class
+     */
+
+    // setting a location to start, Andy
     public Player() {
         location = "Main Hallway 1"; // set to first room
     }
 
+    public void equipWeapon(String item){
+        Item temp = null;
+        if (inventory.containsKey(item)){
+            temp = inventory.get(item);
+            if (temp.getItemFeatures().equals("Weapon")){
+                damage = damage + temp.getItemStrength();
+                System.out.println(temp.getItemName() + " has been equipped");
+                System.out.println("Damage has increased by " + temp.getItemStrength());
+            }else if(!inventory.containsKey(item)){
+                System.out.println(item + " is not located in your inventory or does not exist");
+                System.out.println("Try again");
+            }
+            else {
+                System.out.println("Sorry invalid command, try again ");
+
+            }
+
+        }
+    }
+
+    public void lifeCounter(){
+        if (lives >= 0) {
+            if (health == 0) {
+                lives -= 1;
+                health += 100;
+            }
+        }
+        else {
+            System.out.println("You have ran out of lives");
+            System.out.println("The game has ended, try again");
+        }
+    }
+
+
+    // Andy
     public void getInventory() {
         if (inventory.isEmpty()) { //if inventory is empty
             System.out.println("Inventory is empty, try to find items");
@@ -24,7 +65,7 @@ public class Player {
             }
         }
     }
-
+    // Andy
     public void add(String item, HashMap<String, Room> rooms) {
         // check whether object is in room you are in
         Room current = rooms.get(location);
@@ -41,7 +82,7 @@ public class Player {
             System.out.println( item + " is not in the room.");
         }
     }
-
+    //Andy
     public void consume (String item){
         Item temp = null;
         double healing ;
@@ -64,7 +105,7 @@ public class Player {
             System.out.println("food item is not present in inventory");
         }
     }
-
+    //Andy
     public void drop(String item, HashMap<String, Room> rooms) {
         Item temp = null;
 
@@ -81,7 +122,7 @@ public class Player {
         }
     }
 
-    // created a movement function to allow player to travel through rooms based on exits
+    // created a movement function to allow player to travel through rooms based on exits, Andy
     public void movement(String direction, HashMap<String, Room> rooms) {
         direction = direction.toLowerCase();
         Room current = rooms.get(location);
@@ -120,6 +161,13 @@ public class Player {
             System.out.println("Sorry, not valid direction, try again!");
         }
 
+    }
+    public void look(String item) {
+        System.out.println(inventory.get(item).getItemDescription());
+    }
+
+    public void look(HashMap<String, Room> rooms) {
+        rooms.get(location).look();
     }
 
 

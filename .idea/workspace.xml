@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a53c17c-9262-4e15-a871-d8764d3cce7a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TextGame/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextGame/Monster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TextGame/ReadTextFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextGame/ReadTextFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TextGame/Artifact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TextGame/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextGame/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TextGame/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextGame/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,14 +15,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="27qucfpehJ9861MjM8gferz9Ai5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="ServiceViewManager">
@@ -77,43 +82,17 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="editted the monster file" />
     <MESSAGE value="added to new variables to monster file" />
-    <option name="LAST_COMMIT_MESSAGE" value="added to new variables to monster file" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="602" y="323" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1650060054392">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="602" y="323" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.864@0.0.1536.864" timestamp="1650060054392" />
-    <state x="199" y="29" key="CommitChangelistDialog2" timestamp="1650062039096">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="199" y="29" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1650062039096" />
-    <state x="247" y="75" key="SettingsEditor" timestamp="1650062212771">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="247" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1650062212771" />
-    <state x="361" y="167" key="Vcs.Push.Dialog.v2" timestamp="1650064291603">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="361" y="167" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1650064291603" />
-    <state x="414" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1650062011355">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="414" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1650062011355" />
-    <state x="365" y="226" key="git4idea.merge.GitPullDialog" timestamp="1650061293973">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="365" y="226" key="git4idea.merge.GitPullDialog/0.0.1536.864@0.0.1536.864" timestamp="1650061293973" />
+    <MESSAGE value="Added the main method for the moment along with some of their functional requirements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the main method for the moment along with some of their functional requirements" />
   </component>
 </project>
