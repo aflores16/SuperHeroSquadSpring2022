@@ -80,7 +80,7 @@ Unlock Engine Room Door
 0.0
 END
 A10
-Engine Room Keycard 
+Stateroom 2 Keycard 
 R06
 Room Access
 Thus keycard goes to a door
@@ -89,7 +89,7 @@ Unlocks Stateroom 2’s Door
 0.0
 END
 A11
-Engine Room Keycard 
+Upper Pool Deck Keycard 
 R19
 Room Access
 Thus keycard goes to a door
@@ -98,7 +98,7 @@ Unlocks Upper Pool Deck’s Door
 0.0
 END
 A12
-Engine Room Keycard 
+Oceanview room 1 Keycard 
 R13
 Room Access
 Thus keycard goes to a door
@@ -107,7 +107,7 @@ Unlocks Oceanview Room 1’s Door
 0.0
 END
 A13
-Engine Room Keycard 
+Nightclub Keycard 
 R22
 Room Access
 Thus keycard goes to a door
@@ -116,7 +116,7 @@ Unlocks Nightclub’s Door
 0.0
 END
 A14
-Engine Room Keycard 
+Captain Cabin Keycard 
 R19
 Room Access
 Thus keycard goes to a door
@@ -125,7 +125,7 @@ Unlocks Captain’s Cabin Door
 0.0
 END
 A15
-Engine Room Keycard 
+Bridge Keycard 
 R28
 Room Access
 Thus keycard goes to a door
