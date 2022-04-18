@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a53c17c-9262-4e15-a871-d8764d3cce7a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/TextGame/Artifact.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TextGame/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextGame/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TextGame/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextGame/Player.java" afterDir="false" />
+    <list default="true" id="8a53c17c-9262-4e15-a871-d8764d3cce7a" name="Default Changelist" comment="added a few more commands">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Artifact.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Artifact.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monster.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Monster.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Room.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Room.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TextGame/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextGame/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TextGame/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextGame/Monster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TextGame/ReadTextFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextGame/ReadTextFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,11 +28,32 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="http.proxy" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Controller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TextGame.Controller" />
+      <module name="TextGameGroupProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TextGame.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Controller" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -42,6 +67,7 @@
       </list>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -74,7 +100,42 @@
       <option name="project" value="LOCAL" />
       <updated>1650062040172</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added the main method for the moment along with some of their functional requirements">
+      <created>1650203298420</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1650203298420</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added the main method for the moment along with some of their functional requirements">
+      <created>1650203309822</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1650203309822</updated>
+    </task>
+    <task id="LOCAL-00006" summary="deleted this class">
+      <created>1650203339048</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1650203339048</updated>
+    </task>
+    <task id="LOCAL-00007" summary="updated room class to have look method">
+      <created>1650207083929</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1650207083929</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added a few more commands">
+      <created>1650303008935</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1650303008935</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -93,6 +154,9 @@
     <MESSAGE value="editted the monster file" />
     <MESSAGE value="added to new variables to monster file" />
     <MESSAGE value="Added the main method for the moment along with some of their functional requirements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the main method for the moment along with some of their functional requirements" />
+    <MESSAGE value="deleted this class" />
+    <MESSAGE value="updated room class to have look method" />
+    <MESSAGE value="added a few more commands" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a few more commands" />
   </component>
 </project>
