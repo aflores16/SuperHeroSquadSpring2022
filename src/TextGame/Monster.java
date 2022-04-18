@@ -65,7 +65,7 @@ public class Monster {
     }
 
 
- 
+
     public String getFoodName_() {
         return foodName_;
     }
