@@ -80,7 +80,7 @@ Lower 2
 14
 100
 key card
-88 
+88
 Food
 This guy
 seems to be
@@ -94,7 +94,7 @@ Lower 1
 55
 10
 14
-100 
+100
 key card
 90
 Food 
@@ -114,17 +114,21 @@ Crew Mate
 10
 7
 7
+0
+none
 20
 Food
 A simple
 crew mate. 
 END
 9
-Comedy Club
+Engine Room, Crew Cabin 1, State Room 1, Crew Cabin 2, State Room 2, Lower Deck Pool,OceanView Room 1, Fitness Center, Upper Deck Pool,Captain Cabin, OceanView Room 2, Casino,Night Club, Casino, Comedy Club
 Lacky
 10
 5
 5
+0
+none
 30
 Ammo
 One of Victor’s Lackies.
@@ -133,11 +137,13 @@ END
 10
 Bridge
 Victor
-NA
-NA
+1
 175
 175
+0
+none
 15
+none
 There is your
 target. Victor
 has been terrorizing this
@@ -146,10 +152,4 @@ solar system
 for too long.
 Take him
 out. 
-
-
-
-
-
-
-
+END

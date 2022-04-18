@@ -9,7 +9,7 @@ public class ReadTextFile {
     public static HashMap<String, Room> createRooms(HashMap<String, Item> items ,HashMap <String, Monster> monsters) {
         try {
             // creating a reader to read the text file
-            BufferedReader reader = new BufferedReader(new FileReader(".idea/Room.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader("Room.txt"));
             String line = reader.readLine();
             HashMap<String, Room> rooms = new HashMap<String, Room>();
 
@@ -146,24 +146,26 @@ public class ReadTextFile {
 				String itemType = line;
 				line = reader.readLine();
 				
-				String itemDescription = "";
+				String itemDescription = line;
+				line=reader.readLine();
 				
 				String itemFeatures = line;
 				line = reader.readLine();
 				
 				String itemUsage = line;
 				line = reader.readLine();
+
 				
 				String strength = line;
-				Double itemStrength = Double.valueOf(strength);
+				double itemStrength = Double.valueOf(strength);
 				line = reader.readLine();
 				
-				while (!line.equals("END")) { 
-					
-					// add each line to overall string for description
-					itemDescription = itemDescription + line + '\n';
-					line = reader.readLine();
-				}
+//				while (!line.equals("END")) {
+//
+//					// add each line to overall string for description
+//					itemDescription = itemDescription + line + '\n';
+//					line = reader.readLine();
+//				}
 
 				// put new item object and items name in HashMap
 				items.put(itemName, new Item(itemId, itemName, location, itemType, itemDescription, itemFeatures, itemUsage, itemStrength));

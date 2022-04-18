@@ -13,7 +13,7 @@ R18
 Weapon
 A precision laser rifle. In the right hands, this becomes a deadly weapon.
 Shoot, Melee, Reload
-This weapon is used to attack monsters
+This weapon is used to attack monsters2
 8
 END
 A03
@@ -68,7 +68,7 @@ Currency
 Money purchasing items 
 Pickable 
 Used to purchase items from the trader 
-NA
+0.0
 END
 A09
 Engine Room Keycard 
@@ -77,7 +77,7 @@ Room Access
 Thus keycard goes to a door
 Usable 
 Unlock Engine Room Door
-NA
+0.0
 END
 A10
 Engine Room Keycard 
@@ -86,7 +86,7 @@ Room Access
 Thus keycard goes to a door
 Usable 
 Unlocks Stateroom 2’s Door
-NA
+0.0
 END
 A11
 Engine Room Keycard 
@@ -95,7 +95,7 @@ Room Access
 Thus keycard goes to a door
 Usable 
 Unlocks Upper Pool Deck’s Door
-NA
+0.0
 END
 A12
 Engine Room Keycard 
@@ -104,7 +104,7 @@ Room Access
 Thus keycard goes to a door
 Usable 
 Unlocks Oceanview Room 1’s Door
-NA
+0.0
 END
 A13
 Engine Room Keycard 
@@ -113,7 +113,7 @@ Room Access
 Thus keycard goes to a door
 Usable 
 Unlocks Nightclub’s Door
-NA
+0.0
 END
 A14
 Engine Room Keycard 
@@ -122,7 +122,7 @@ Room Access
 Thus keycard goes to a door
 Usable 
 Unlocks Captain’s Cabin Door
-NA
+0.0
 END
 A15
 Engine Room Keycard 
@@ -131,7 +131,7 @@ Room Access
 Thus keycard goes to a door
 Usable 
 Unlock the Final Boss Room in the Bridge
-NA
+0.0
 END
 A16
 Universal Ammo
@@ -140,13 +140,14 @@ Room Access
 This ammo can be used for any gun
 Pickable
 Can be loaded into any gun
-NA
+0.0
 END
 A17
 Slot Machine
 R24
 This is used for gambling
-NA
+
+currency machine
 It gives the player a chance to win gold
-NA
-END
+0.0
+END1
