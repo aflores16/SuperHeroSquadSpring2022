@@ -81,6 +81,9 @@ public class Controller {
                     System.out.println("Game will attempt to save");
                     //save
                 }
+                else if (command[0].equals("flee")){
+
+                }
             }
             else if (command[0].equals("pickup")){
                 if (command.length >= 2) {
@@ -148,7 +151,28 @@ public class Controller {
                     player.equipWeapon(temp);
             }
     }
+            else if (command[0].equals("unequip")){
+                if (command.length >= 2){
+                    String temp = "";
+                    for (int i = 0 ; i < command.length; i++) {
+                        temp = temp + command[i] + " ";
+                    }
+                    temp.trim();
+                    player.unequipped(temp);
+            }
         }
+            else if (command[0].equals("attack")){
+                if (command.length >= 2){
+                    String temp = "";
+                    for (int i = 0 ; i < command.length; i++) {
+                        temp = temp + command[i] + " ";
+                    }
+                    temp.trim();
+                    //player.attack(temp);
+            }
+            }
+
+    }
     }
 
     // Andy

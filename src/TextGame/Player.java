@@ -6,7 +6,7 @@ import java.util.Map;
 public class Player {
     private static String location;
     private double health = 100;
-    private double damage = 0.0 ;
+    private double damage = 20.0 ;
     private String playerName;
     private static Map<String, Item> inventory = new HashMap<String, Item>();
     private int lives = 3;
@@ -39,6 +39,20 @@ public class Player {
             }
 
         }
+    }
+
+    public void unequipped(String item ){
+        Item temp = null;
+
+        if (inventory.containsKey(item) && damage >= 20){
+            temp = inventory.get(item);
+            damage = damage - temp.getItemStrength();
+            System.out.println(temp.getItemName() + " is unequipped");
+            System.out.println("Your damage is " + damage);
+        } else {
+            System.out.println(item + "is not equipped ");
+        }
+
     }
 
     public void lifeCounter(){
