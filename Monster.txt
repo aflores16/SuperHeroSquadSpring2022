@@ -120,9 +120,7 @@ A simple
 crew mate. 
 END
 9
-Engine Room, Crew Cabin 1, State Room 1, Crew Cabin 2, State Room 2, Lower Deck Pool,
-OceanView Room 1, Fitness Center, Upper Deck Pool,Captain Cabin, OceanView Room 2, Casino,
-Night Club, Casino, Comedy Club
+Comedy Club
 Lacky
 10
 5

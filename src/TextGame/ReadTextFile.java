@@ -92,21 +92,8 @@ public class ReadTextFile {
                 line = reader.readLine();
 
                 String foodName = line;
-
-                line = reader.readLine();
-
-                String item = line;
-                line = reader.readLine();
                
-                if(line.equals(9)){
-					 String[] neighbors = line.split(",");
-                for (int i = 0; i < neighbors.length; i++) { // travers
-                    // neighbors
-                    // trim each name
-                    neighbors[i] = neighbors[i].trim();
-                }
-				
-				}
+
 				line = reader.readLine();
 
                 String description = "";

@@ -2,7 +2,6 @@ package TextGame;
 
 public class Monster {
     private String monsterName_;
-	private String roomName_;
     private int health_;
     private int lowAttack_ ;
 	private int highAttack_;
@@ -64,7 +63,7 @@ public class Monster {
 	 public String getKeyName() {
         return keyName_;
     }
-    public String getRoomName_(){ return roomName_;}
+
 
  
     public String getFoodName_() {
