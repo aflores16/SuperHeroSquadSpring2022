@@ -303,7 +303,7 @@ Ammo
 One of Victor’s Lackies.
 Nothing special. 
 END
-10
+23
 Bridge
 Victor
 1
