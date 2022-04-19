@@ -122,7 +122,7 @@ A simple
 crew mate. 
 END
 9
-Engine Room, Crew Cabin 1, State Room 1, Crew Cabin 2, State Room 2, Lower Deck Pool,OceanView Room 1, Fitness Center, Upper Deck Pool,Captain Cabin, OceanView Room 2, Casino,Night Club, Casino, Comedy Club
+Engine Room
 Lacky
 10
 5
@@ -135,6 +135,175 @@ One of Victor’s Lackies.
 Nothing special. 
 END
 10
+Crew Cabin 1
+Lacky
+10
+5
+5
+0
+none
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+11
+State Room 1
+Lacky
+10
+5
+5
+0
+none
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+12
+Crew Cabin 2
+Lacky
+10
+5
+5
+0
+none
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+13
+State Room 2
+Lacky
+10
+5
+5
+0
+none
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+14
+Lower Deck Pool
+Lacky
+10
+5
+5
+0
+none
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+15
+OceanView Room 1
+Lacky
+10
+5
+5
+0
+none
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+16
+Fitness Center
+Lacky
+10
+5
+5
+0
+none
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+17
+Upper Deck Pool
+Lacky
+10
+5
+5
+0
+none
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+18
+Captain Cabin
+Lacky
+10
+5
+5
+0
+none
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+19
+OceanView Room 2
+Lacky
+10
+5
+5
+0
+none
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+20
+Casino
+Lacky
+10
+5
+5
+0
+none
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+21
+Night Club
+Lacky
+10
+5
+5
+0
+none
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+22
+Comedy Club
+Lacky
+10
+5
+5
+0
+none
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+23
 Bridge
 Victor
 1
