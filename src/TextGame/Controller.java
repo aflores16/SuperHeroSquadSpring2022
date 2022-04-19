@@ -91,6 +91,47 @@ public class Controller {
 
                 player.movement(command[0], rooms);
                 System.out.println(rooms.get(player.getLocation()).getDescription());
+
+		if (rooms.get(player.getLocation()).getPuzzle().containsKey(player.getLocation())) {
+                        currentAttempt = Integer.parseInt(rooms.get(player.getLocation()).getPuzzle().get(player.getLocation()).getAttempt());
+                        while (currentAttempt > 0 && !pflags.contains(rooms.get(player.getLocation()).getId())) {
+                            System.out.println(rooms.get(player.getLocation()).getPuzzle().get(player.getLocation()).getDescription());
+                            System.out.println("Current attempt left: " + currentAttempt + '\n');
+                            String Solution = rooms.get(player.getLocation()).getPuzzle().get(player.getLocation()).getName();
+                            input = in.nextLine();
+                            input = input.toLowerCase();
+                            command = input.split(" ");
+                            if (!command[0].equals(Solution)) {
+                                currentAttempt--;
+                            } else {
+                                System.out.println("Puzzle was Solved" + '\n');
+                                pflags.add(rooms.get(player.getLocation()).getId());
+
+                            }
+                        }
+                        System.out.print(rooms.get(player.getLocation()).getName());
+
+                        if (!flags.contains(rooms.get(player.getLocation()).getId())) {
+                            System.out.println(" not visited" + '\n');
+                            flags.add(rooms.get(player.getLocation()).getId());
+                        }else {
+                            System.out.println(" visited" + '\n');
+                        }
+                        System.out.println(rooms.get(player.getLocation()).getDescription());
+                        System.out.println("Type look or l to retrieve the description of the room");
+                    }else{
+                        System.out.print(rooms.get(player.getLocation()).getName());
+
+                        if (!flags.contains(rooms.get(player.getLocation()).getId())) {
+                            System.out.println(" not visited" + '\n');
+                            flags.add(rooms.get(player.getLocation()).getId());
+                        }else {
+                            System.out.println(" visited" + '\n');
+
+                        }
+                        System.out.println(rooms.get(player.getLocation()).getDescription());
+                        System.out.println("Type look or l to retrieve the description of the room");
+                    }
     }
             else if(command[0].equals("consume")){
                 if (command.length >= 2){
