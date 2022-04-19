@@ -1,69 +1,38 @@
 package TextGame;
 
 public class Puzzle {
-	private String puzzleId;
-	private String puzzleDescription;
-	private String solution;
-	private String faiedMessage;
-	private String successMessage;
-	private String roomLocation;
-	
-	public Puzzle(String puzzleId, String puzzleDescription, String solution, String failedMessage, String successMessage, String roomLocation) {
-		this.puzzleId = puzzleId;
-		this.puzzleDescription= puzzleDescription;
-		this.solution = solution;
-		this.faiedMessage = failedMessage;
-		this.successMessage = successMessage;
-		this.roomLocation = roomLocation;
-	}
+    private String name_;
+    private String id_;
+    private String description_;
+    private String location_;
+    private String attempt_;
 
-	public String getPuzzleId() {
-		return puzzleId;
-	}
 
-	public void setPuzzleId(String puzzleId) {
-		this.puzzleId = puzzleId;
-	}
+    public Puzzle(String name, String id, String description, String location, String attempt) {
+        name_ = name;
+        id_ = id;
+        description_ = description;
+        location_ = location;
+        attempt_ = attempt;
+    }
 
-	public String getPuzzleDescription() {
-		return puzzleDescription;
-	}
+    public String getName () {
+        return name_;
+    }
 
-	public void setPuzzleDescription(String puzzleDescription) {
-		this.puzzleDescription = puzzleDescription;
-	}
+    public String getId () {
+        return id_;
+    }
 
-	public String getSolution() {
-		return solution;
-	}
+    public String getDescription () {
+        return description_;
+    }
 
-	public void setSolution(String solution) {
-		this.solution = solution;
-	}
+    public String getLocation () {
+        return location_;
+    }
 
-	public String getFaiedMessage() {
-		return faiedMessage;
-	}
-
-	public void setFaiedMessage(String faiedMessage) {
-		this.faiedMessage = faiedMessage;
-	}
-
-	public String getSuccessMessage() {
-		return successMessage;
-	}
-
-	public void setSuccessMessage(String successMessage) {
-		this.successMessage = successMessage;
-	}
-
-	public String getRoomLocation() {
-		return roomLocation;
-	}
-
-	public void setRoomLocation(String roomLocation) {
-		this.roomLocation = roomLocation;
-	}
-	
-	
+    public String getAttempt () {
+        return attempt_;
+    }
 }
