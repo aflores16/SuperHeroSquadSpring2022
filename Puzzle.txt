@@ -1,0 +1,8 @@
+Up down left right
+1
+2
+1
+There seems to be a stick attached to the 
+chest reading: “4 directions in the right 
+order opens what you seek.” 
+END
