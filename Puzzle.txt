@@ -1,6 +1,6 @@
 Up down left right
 1
-2
+Engine Room
 1
 There seems to be a stick attached to the 
 chest reading: “4 directions in the right 

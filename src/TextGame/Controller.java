@@ -1,6 +1,7 @@
 package TextGame;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Scanner;
@@ -11,8 +12,13 @@ public class Controller {
         Player player = new Player();
         HashMap<String, Item> items = ReadTextFile.createItems();
         HashMap<String, Monster> monsters = ReadTextFile.createMonster();
-        HashMap<String, Room> rooms = ReadTextFile.createRooms(items, monsters);
-       // HashMap<String, Puzzle> scores = ReadTextFile.createPuzzle();
+        HashMap<String, Puzzle> puzzles = ReadTextFile.createPuzzles();
+        HashMap<String, Room> rooms = ReadTextFile.createRooms(items, monsters, puzzles);
+        ArrayList<String> flags = new ArrayList <String>();
+        ArrayList <String> pflags = new ArrayList <String>();
+        ArrayList <String> mflags = new ArrayList <String>();
+        Integer currentAttempt;
+        Boolean doubleatt = false;
         Scanner input = new Scanner(System.in);
 
         // show current location of room
@@ -98,9 +104,9 @@ public class Controller {
                             System.out.println(rooms.get(player.getLocation()).getPuzzle().get(player.getLocation()).getDescription());
                             System.out.println("Current attempt left: " + currentAttempt + '\n');
                             String Solution = rooms.get(player.getLocation()).getPuzzle().get(player.getLocation()).getName();
-                            input = in.nextLine();
-                            input = input.toLowerCase();
-                            command = input.split(" ");
+                            in = input.nextLine();
+                            in = in.toLowerCase();
+                            command = in.split(" ");
                             if (!command[0].equals(Solution)) {
                                 currentAttempt--;
                             } else {

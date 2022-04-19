@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.HashMap;
 
 public class ReadTextFile {
-    public static HashMap<String, Room> createRooms(HashMap<String, Item> items ,HashMap <String, Monster> monsters) {
+    public static HashMap<String, Room> createRooms(HashMap<String, Item> items ,HashMap <String, Monster> monsters, HashMap<String, Puzzle> puzzles) {
         try {
             // creating a reader to read the text file
             BufferedReader reader = new BufferedReader(new FileReader("Room.txt"));
@@ -42,7 +42,7 @@ public class ReadTextFile {
                 }
 
                 // put new room object and rooms name in HashMap
-                rooms.put(name, new Room(name, roomNum,deckNum,roomId,description, neighbors,  items, monsters));
+                rooms.put(name, new Room(name, roomNum,deckNum,roomId,description, neighbors,  items, monsters, puzzles));
 
                 line = reader.readLine(); // move line to beginning of next room
 
@@ -181,4 +181,51 @@ public class ReadTextFile {
 		}
 		return null;
 	}
+
+    public static HashMap<String, Puzzle> createPuzzles() {
+        try {
+
+            BufferedReader reader = new BufferedReader(new FileReader("Puzzle.txt"));
+            String line = reader.readLine();
+            HashMap<String, Puzzle> puzzles = new HashMap<String, Puzzle>();
+
+            while (line != null) {
+                String name = line;
+
+                name = name.toLowerCase();
+
+                String id = reader.readLine();
+
+                line = reader.readLine();
+
+                String location = line.trim();
+
+                line = reader.readLine();
+
+                String attempt = line.trim();
+
+                line = reader.readLine();
+
+                String description = "";
+
+                while (!line.equals("END")) {
+                    description = description + line + '\n';
+                    line = reader.readLine();
+                }
+
+                puzzles.put(location, new Puzzle(name, id, description, location, attempt));
+
+                line = reader.readLine();
+
+            }
+            reader.close();
+
+            return puzzles;
+
+        } catch (IOException e) {
+            System.out.println("File could not be accessed, please try again!");
+        }
+        return null;
+    }
+
 }

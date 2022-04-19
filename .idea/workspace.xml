@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8a53c17c-9262-4e15-a871-d8764d3cce7a" name="Default Changelist" comment="added a few more commands">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Artifact.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Artifact.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Monster.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Monster.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Room.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Room.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Puzzle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Puzzle.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TextGame/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextGame/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TextGame/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextGame/Monster.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TextGame/ReadTextFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextGame/ReadTextFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TextGame/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextGame/Room.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +28,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MiniGame" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
