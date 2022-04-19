@@ -75,8 +75,8 @@ public class Controller {
                     player.drop(temp, rooms);
                 } else {
                     System.out.println(command[1] + "not found/doesn't exist, please try again!");
+                }
             }
-        }
             else if (command[0].equals("search")) { // if player wants to look
                 // if player wants to look at object
                 if (command.length >= 2) {
@@ -87,10 +87,11 @@ public class Controller {
                     temp = temp.trim();
                     player.look(temp);
                 } else if (command.length == 1) { // else want to look at room
-                    player.look(rooms);}
-                else {
+                    player.look(rooms);
+                } else {
                     System.out.println(command[1] + "not found/doesn't exist, please try again!");
-                }}
+                }
+            }
             else if (command[0].equals("north") || command[0].equals("south") || command[0].equals("east")
                     || command[0].equals("west") || command[0].equals("n") || command[0].equals("s") || command[0].equals("e")
                     || command[0].equals("w")) {
@@ -98,7 +99,7 @@ public class Controller {
                 player.movement(command[0], rooms);
                 System.out.println(rooms.get(player.getLocation()).getDescription());
 
-		if (rooms.get(player.getLocation()).getPuzzle().containsKey(player.getLocation())) {
+		        if (rooms.get(player.getLocation()).getPuzzle().containsKey(player.getLocation())) {
                         currentAttempt = Integer.parseInt(rooms.get(player.getLocation()).getPuzzle().get(player.getLocation()).getAttempt());
                         while (currentAttempt > 0 && !pflags.contains(rooms.get(player.getLocation()).getId())) {
                             System.out.println(rooms.get(player.getLocation()).getPuzzle().get(player.getLocation()).getDescription());
@@ -125,7 +126,7 @@ public class Controller {
                         }
                         System.out.println(rooms.get(player.getLocation()).getDescription());
                         System.out.println("Type look or l to retrieve the description of the room");
-                    }else{
+		        }else{
                         System.out.print(rooms.get(player.getLocation()).getName());
 
                         if (!flags.contains(rooms.get(player.getLocation()).getId())) {
@@ -137,8 +138,9 @@ public class Controller {
                         }
                         System.out.println(rooms.get(player.getLocation()).getDescription());
                         System.out.println("Type look or l to retrieve the description of the room");
-                    }
-    }
+		        }
+
+            }
             else if(command[0].equals("consume")){
                 if (command.length >= 2){
                     String temp = "";
@@ -147,8 +149,8 @@ public class Controller {
                     }
                     temp=temp.trim();
                     player.consume(temp);
+                }
             }
-        }
             else if (command[0].equals("equip")){
                 if (command.length >= 2){
                     String temp = "";
@@ -157,8 +159,8 @@ public class Controller {
                     }
                     temp.trim();
                     player.equipWeapon(temp);
+                }
             }
-    }
             else if (command[0].equals("unequip")){
                 if (command.length >= 2){
                     String temp = "";
@@ -167,8 +169,8 @@ public class Controller {
                     }
                     temp.trim();
                     player.unequipped(temp);
+                }
             }
-        }
             else if (command[0].equals("attack")){
                 if (command.length >= 2){
                     String temp = "";
@@ -177,7 +179,7 @@ public class Controller {
                     }
                     temp.trim();
                     //player.attack(temp);
-            }
+                }
             }
             else if (command.length==1){
                 if (command[0].equals("help")){
