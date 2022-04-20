@@ -12,10 +12,12 @@ public class Room {
     private String description_;
     private HashMap<String, Item> item = new HashMap<String, Item>();
     private HashMap<String, Monster> monster = new HashMap<String, Monster>();
+    private HashMap<String, Puzzle> puzzle = new HashMap<String, Puzzle>();
 
     public Room(String name, String roomNum, String deckNum,
                 String roomID, String description, String[] neighbors,
-                HashMap<String, Item> items, HashMap<String, Monster> monsters) {
+                HashMap<String, Item> items, HashMap<String, Monster> monsters,
+                HashMap<String, Puzzle> puzzles) {
         name_ = name;
         description_ = description;
         roomNum_ = roomNum;
@@ -25,6 +27,7 @@ public class Room {
 
         setItems(items);
         setMonsters(monsters);
+        setPuzzles(puzzles);
     }
     public void look() {
         //System.out.println(description_);
@@ -89,22 +92,42 @@ public class Room {
         }
     }
 
+    public void setPuzzles(HashMap<String, Puzzle> puzzles) {
+        for (Map.Entry<String, Puzzle> elt : puzzles.entrySet()) {
+
+            if (elt.getValue().getLocation().equals(name_)) {
+
+                puzzle.put(elt.getKey(), elt.getValue());
+            }
+        }
+    }
+
+    public String getName() {
+        return name_;
+    }
+
+    public String getId() {
+        return roomID_;
+    }
+
     public String[] getNeighbors() {
         return neighbors_;
     }
 
-
-    public String getName() {
-        return name_;
+    public String getDescription() {
+        return description_;
     }
 
     public HashMap<String, Item> getInventory() {
         return item;
     }
 
+    public HashMap<String, Puzzle> getPuzzle() {
+        return puzzle;
+    }
 
-    public String getDescription() {
-        return description_;
+    public HashMap<String, Monster> getMonster() {
+        return monster;
     }
 
 }
