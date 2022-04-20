@@ -1,9 +1,10 @@
 package TextGame;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Room {
+public class Room implements Serializable {
     private String name_;
     private String roomNum_;
     private String deckNum_;
