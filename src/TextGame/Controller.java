@@ -54,7 +54,6 @@ public class Controller {
 			in = in.toLowerCase();
 
 			String[] command = in.split(" ");
-
 			// commands that are one word
 
 			if (command[0].equals("pickup") || command[0].contains("pickup") || command[0].contains("pic")) {
@@ -105,7 +104,7 @@ public class Controller {
 					|| command[0].equals("west") || command[0].equals("n") || command[0].equals("so")
 					|| command[0].equals("e") || command[0].equals("w") || command[0].contains("so") 
 					|| command[0].contains("south") || command[0].contains("north") || command[0].contains("no") 
-					|| command[0].contains("east") || command[0].contains("e") || command[0].contains("west") 
+					|| command[0].contains("east") || command[0].contains("west") 
 					|| command[0].contains("w")) {
 				player.movement(command[0], rooms);
 				System.out.println(rooms.get(player.getLocation()).getDescription());
@@ -191,7 +190,7 @@ public class Controller {
 					// player.attack(temp);
 				}
 			} else if (command.length == 1) {
-				System.out.println(command[0]);
+				
 				if (command[0].equals("help")) {
 					System.out.println("---------------------Command Menu---------------------------");
 					System.out.println("Save: This will save the game");
@@ -217,7 +216,7 @@ public class Controller {
 				} else if (command[0].equals("quit")) {
 					System.out.println("Thanks for playing");
 					Scanner saver = new Scanner(System.in);
-					System.out.println("would you like to say, type y to save if not hit any other key");
+					System.out.println("would you like to save, type y to save if not hit any other key");
 					String choice = saver.nextLine();
 					choice = choice.toLowerCase();
 					if (choice.equals("y")) {
