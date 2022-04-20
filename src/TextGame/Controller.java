@@ -180,7 +180,25 @@ public class Controller {
 					temp.trim();
 					player.unequipped(temp);
 				}
-			} else if (command[0].equals("attack") || command[0].contains("attack") || command[0].contains("att")) {
+			}else if (command[0].equals("look") || command[0].equals("l")) { // if player wants to look
+                    // if player wants to look at object
+                    if (command.length >= 2) {
+                        String temp = "";
+                        // create string of object name
+                        for (int i = 1; i < command.length; i++) {
+                            temp = temp + command[i] + " ";
+                        }
+                        temp = temp.trim();
+                        System.out.print(rooms.get(player.getLocation()).getName());
+
+                        player.look(temp);
+                    } else if (command.length == 1) { // else want to look at room
+                        player.look(rooms);
+                    } else { // else
+                        System.out.println(command[1] + "not found/doesn't exist, please try again!");
+                    }
+
+                } else if (command[0].equals("attack") || command[0].contains("attack") || command[0].contains("att")) {
 				if (command.length >= 2) {
 					String temp = "";
 					for (int i = 0; i < command.length; i++) {
