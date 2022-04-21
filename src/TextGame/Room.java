@@ -10,12 +10,13 @@ public class Room implements Serializable {
     private String deckNum_;
     private String roomID_;
     private String[] neighbors_;
+    private boolean trader_;
     private String description_;
     private HashMap<String, Item> item = new HashMap<String, Item>();
     private HashMap<String, Monster> monster = new HashMap<String, Monster>();
     private HashMap<String, Puzzle> puzzle = new HashMap<String, Puzzle>();
 
-    public Room(String name, String roomNum, String deckNum,
+    public Room(String name, boolean trader , String roomNum, String deckNum,
                 String roomID, String description, String[] neighbors,
                 HashMap<String, Item> items, HashMap<String, Monster> monsters,
                 HashMap<String, Puzzle> puzzles) {
@@ -25,6 +26,7 @@ public class Room implements Serializable {
         deckNum_ = deckNum;
         roomID_ = roomID;
         neighbors_ = neighbors;
+        trader_ = trader;
 
         setItems(items);
         setMonsters(monsters);

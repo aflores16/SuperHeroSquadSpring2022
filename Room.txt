@@ -1,4 +1,5 @@
 Main Hallway 1
+false
 0
 1
 R00
@@ -8,6 +9,7 @@ Plenty of rooms to search for your target here. To your north and south are crew
 To your left lies the engine room, and right lies the second main hallway.
 END
 Main Hallway 2
+false
 0
 1
 R01
@@ -16,6 +18,7 @@ You are on deck 1. You entered the second main hallway. To your north and south 
 To your left lies the first main hallway, and right lies the forward hallway.
 END
 Engine Room
+false
 2
 1
 R02
@@ -25,6 +28,7 @@ Beyond the cloud of steam, you see the engine core in the center of the room, ex
 from the floor to the ceiling. At your feet, you see the silhouette of the engineer’s warm corpse.
 END
 Crew Cabin 1
+false
 3
 1
 R03
@@ -33,6 +37,7 @@ You are on deck 1. You entered the crew cabin. Not much of value in here…
 To your south lies the second main hallway.
 END
 Crew Cabin 2
+false
 4
 1
 R04
@@ -42,6 +47,7 @@ the room with the Syndicate’s insignia etched in the wood. To your north lies
 the first main hallway.
 END
 Stateroom 1
+false
 5
 1
 R05
@@ -51,6 +57,7 @@ This room is filled with empty luggage.
 To your south lies the second main hallway.
 END
 Stateroom 2
+false
 6
 1
 R06
@@ -60,6 +67,7 @@ This is a small room filled with weapons cases and luggage of coins.
 To the north lies the second main hallway
 END
 Forward Hallway 1
+false
 7
 1
 R07
@@ -69,6 +77,7 @@ south are the port and starboard hallways. To your west lies the main
 hallway and east lies the lower pool.
 END
 Port Hallway 1
+false
 8
 1
 R08
@@ -78,6 +87,7 @@ colliding in the distance. You don’t see any clues to Victor’s whereabouts.
 To your west lies the stairs to deck 2, your south lies the forward hallway.
 END
 Starboard Hallway 1
+false
 9
 1
 R09
@@ -87,6 +97,7 @@ You don’t see any clues to Victor’s whereabouts here. To your west lies the 
 deck 2 and north lies the forward hallway
 END
 Lower Pool Deck
+false
 10
 1
 R10
@@ -96,6 +107,7 @@ can see threads of plasma igniting in a nebula. To your north lies the upper poo
 on deck 2 and west lies the forward hallway.
 END
 Galley
+true
 11
 2
 R11
@@ -105,6 +117,7 @@ waiters approach them with serving platters of food.
 To your east lies the main hallway.
 END
 Main Hallway 3
+false
 12
 2
 R12
@@ -114,6 +127,7 @@ You remember the intel you gathered on a previous mission about a trader on this
 lies the galley, east lies the forward hallway, north lies the Oceanview room, and south lies the fitness center
 END
 Oceanview Room 1
+false
 13
 2
 R13
@@ -123,6 +137,7 @@ loaded on the console in the far corner of the room. It
 contains data on the Syndicate… To your south lies the main hallway.
 END
 Fitness Center
+false
 14
 2
 R14
@@ -131,6 +146,7 @@ You are on deck 2. You entered the fitness center. You see several exercise
 mats on the floor and bars on the wall. To your north lies the main hallway.
 END
 Forward Hallway 2
+false
 15
 2
 R15
@@ -139,6 +155,7 @@ You are on deck 2. You entered the fitness center. You see several exercise
 mats on the floor and bars on the wall. To your north lies the main hallway.
 END
 Port Hallway 2
+false
 16
 2
 R16
@@ -147,6 +164,7 @@ You are on deck 2. You entered the port hallway. To your west lies the stairs to
 east lies the stairs to the port hallway on deck 1, and south lies the forward hallway.
 END
 Starboard Hallway 2
+false
 17
 2
 R17
@@ -155,6 +173,7 @@ You are on deck 2. You entered the starboard hallway. To your west lies the stai
 3, east lies the stairs to starboard hallway on deck 1, and north lies the forward hallway.
 END
 Upper Pool Deck
+false
 18
 2
 R18
@@ -164,6 +183,7 @@ here. To your south lies the lower pool deck, north lies the comedy club, and we
 forward hallway.
 END
 Captain's Cabin
+false
 19
 3
 R19
@@ -172,6 +192,7 @@ You are on deck 3. You entered the captain’s cabin. You see a shadow of someth
 the floor beside the chaise. You walk closer…it’s the captain! To your east lies the main hallway.
 END
 Main Hallway 4
+false
 20
 3
 R20
@@ -180,6 +201,7 @@ You are on deck 3. You entered the main hallway. You can hear the steering wheel
 your west lies the captain’s cabin, east lies the forward hallway, north lies the Oceanview room, and south lies the nightclub.
 END
 OceanView Room 2
+false
 21
 3
 -,Main Hallway 4,-,-
@@ -187,6 +209,7 @@ You are on deck 3. You entered the Oceanview room. Such a large room with window
 You can see a glimpse of the crescent moon. To your south lies the main hallway.
 END
 Nightclub
+false
 22
 3
 R22
@@ -196,6 +219,7 @@ You see a lot of flashing lights and people dancing in the center of the room.
 To your north lies the main hallway.
 END
 Comedy Club
+false
 23
 3
 R23
@@ -205,6 +229,7 @@ comedian on the stage. To your west lies the forward hallway, north lies the cas
 south lies the upper pool deck.
 END
 Casino
+false
 24
 3
 R24
@@ -214,6 +239,7 @@ Based on your intelligence report, you may be able to trade using the gold won h
 To your south lies the comedy club.
 END
 Port Hallway 3
+false
 25
 3
 R25
@@ -223,6 +249,7 @@ You are close… To your west is the port hallway
 on deck 2, east is the bridge.
 END
 Starboard Hallway 3
+false
 26
 3
 R26
@@ -231,6 +258,7 @@ You are on deck 3. You entered the port hallway. You are close…
 To your west is the starboard hallway on deck 2, east is the bridge.
 END
 Forward Hallway 3
+false
 27
 3
 R27
@@ -240,6 +268,7 @@ To your north lies the port hallway, south lies the starboard hallway, east lies
 comedy club, and west lies the main hallway.
 END
 Bridge
+false
 28
 4
 R28

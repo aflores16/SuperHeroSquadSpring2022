@@ -18,6 +18,10 @@ public class ReadTextFile {
                 // line will equal the next line able to read
                 line = reader.readLine();
 
+                String trader = line;
+                boolean tradePresent=Boolean.parseBoolean(trader);
+                line = reader.readLine();
+
                 String roomNum = line;
                 line = reader.readLine();
 
@@ -42,7 +46,7 @@ public class ReadTextFile {
                 }
 
                 // put new room object and rooms name in HashMap
-                rooms.put(name, new Room(name, roomNum,deckNum,roomId,description, neighbors,  items, monsters, puzzles));
+                rooms.put(name, new Room(name, tradePresent ,roomNum,deckNum,roomId,description, neighbors,  items, monsters, puzzles));
 
                 line = reader.readLine(); // move line to beginning of next room
 
