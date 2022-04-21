@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a53c17c-9262-4e15-a871-d8764d3cce7a" name="Default Changelist" comment="added a few more commands">
+    <list default="true" id="8a53c17c-9262-4e15-a871-d8764d3cce7a" name="Default Changelist" comment="nothing changed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TextGame/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextGame/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Artifact.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Artifact.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TextGame/ReadTextFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextGame/ReadTextFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TextGame/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextGame/Room.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650303008935</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="nothing changed">
+      <created>1650476214722</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1650476214722</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,6 +162,7 @@
     <MESSAGE value="deleted this class" />
     <MESSAGE value="updated room class to have look method" />
     <MESSAGE value="added a few more commands" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a few more commands" />
+    <MESSAGE value="nothing changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="nothing changed" />
   </component>
 </project>
