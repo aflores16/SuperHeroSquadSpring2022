@@ -13,7 +13,7 @@ R18
 Weapon
 A precision laser rifle. In the right hands, this becomes a deadly weapon.
 Shoot, Melee, Reload
-This weapon is used to attack monsters2
+This weapon is used to attack monsters
 8
 END
 A03
