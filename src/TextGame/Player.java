@@ -1,9 +1,10 @@
 package TextGame;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Player {
+public class Player implements Serializable {
     private static String location;
     private double health = 100;
     private double damage = 20.0 ;

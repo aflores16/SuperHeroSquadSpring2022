@@ -7,16 +7,21 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Controller {
+	public static HashMap<String, Monster> monsters;
+	public static Player player;
+	public static HashMap<String, Room> rooms;
+	public static ArrayList<String> vistedRooms;
 
 	public static void main(String[] args) {
-		Player player = new Player();
+		player = new Player();
 		HashMap<String, Item> items = ReadTextFile.createItems();
-		HashMap<String, Monster> monsters = ReadTextFile.createMonster();
-		HashMap<String, Puzzle> puzzles = ReadTextFile.createPuzzles();
-		HashMap<String, Room> rooms = ReadTextFile.createRooms(items, monsters, puzzles);
+		monsters = ReadTextFile.createMonster();
+		HashMap<String, Puzzle>  puzzles = ReadTextFile.createPuzzles();
+		rooms = ReadTextFile.createRooms(items, monsters, puzzles);
 		ArrayList<String> flags = new ArrayList<String>();
 		ArrayList<String> pflags = new ArrayList<String>();
 		ArrayList<String> mflags = new ArrayList<String>();
+		vistedRooms = new ArrayList<String>();
 		Integer currentAttempt;
 		Boolean doubleatt = false;
 		Scanner input = new Scanner(System.in);
@@ -49,7 +54,6 @@ public class Controller {
 			in = in.toLowerCase();
 
 			String[] command = in.split(" ");
-
 			// commands that are one word
 
 			if (command[0].equals("pickup") || command[0].contains("pickup") || command[0].contains("pic")) {
@@ -72,8 +76,11 @@ public class Controller {
 					}
 					temp = temp.trim();
 					player.drop(temp, rooms);
-				} else {
-					System.out.println(command[1] + "not found/doesn't exist, please try again!");
+				}else if (command.length >= 1) {
+					System.out.println(command[0] + " not found/doesn't exist, please try again!");
+				}
+				else {
+					System.out.println(command[1] + " not found/doesn't exist, please try again!");
 				}
 			} else if (command[0].equals("search") || command[0].contains("search") || command[0].contains("sea")) { // if
 																														// player
@@ -97,11 +104,11 @@ public class Controller {
 					|| command[0].equals("west") || command[0].equals("n") || command[0].equals("so")
 					|| command[0].equals("e") || command[0].equals("w") || command[0].contains("so") 
 					|| command[0].contains("south") || command[0].contains("north") || command[0].contains("no") 
-					|| command[0].contains("east") || command[0].contains("e") || command[0].contains("west") 
+					|| command[0].contains("east") || command[0].contains("west") 
 					|| command[0].contains("w")) {
 				player.movement(command[0], rooms);
 				System.out.println(rooms.get(player.getLocation()).getDescription());
-
+				vistedRooms.add(rooms.get(player.getLocation()).getName());
 				if (rooms.get(player.getLocation()).getPuzzle().containsKey(player.getLocation())) {
 					currentAttempt = Integer.parseInt(
 							rooms.get(player.getLocation()).getPuzzle().get(player.getLocation()).getAttempt());
@@ -173,7 +180,25 @@ public class Controller {
 					temp.trim();
 					player.unequipped(temp);
 				}
-			} else if (command[0].equals("attack") || command[0].contains("attack") || command[0].contains("att")) {
+			}else if (command[0].equals("look") || command[0].equals("l")) { // if player wants to look
+                    // if player wants to look at object
+                    if (command.length >= 2) {
+                        String temp = "";
+                        // create string of object name
+                        for (int i = 1; i < command.length; i++) {
+                            temp = temp + command[i] + " ";
+                        }
+                        temp = temp.trim();
+                        System.out.print(rooms.get(player.getLocation()).getName());
+
+                        player.look(temp);
+                    } else if (command.length == 1) { // else want to look at room
+                        player.look(rooms);
+                    } else { // else
+                        System.out.println(command[1] + "not found/doesn't exist, please try again!");
+                    }
+
+                } else if (command[0].equals("attack") || command[0].contains("attack") || command[0].contains("att")) {
 				if (command.length >= 2) {
 					String temp = "";
 					for (int i = 0; i < command.length; i++) {
@@ -183,6 +208,7 @@ public class Controller {
 					// player.attack(temp);
 				}
 			} else if (command.length == 1) {
+				
 				if (command[0].equals("help")) {
 					System.out.println("---------------------Command Menu---------------------------");
 					System.out.println("Save: This will save the game");
@@ -208,17 +234,19 @@ public class Controller {
 				} else if (command[0].equals("quit")) {
 					System.out.println("Thanks for playing");
 					Scanner saver = new Scanner(System.in);
-					System.out.println("would you like to say, type y to save if not hit any other key");
+					System.out.println("would you like to save, type y to save if not hit any other key");
 					String choice = saver.nextLine();
 					choice = choice.toLowerCase();
 					if (choice.equals("y")) {
 						// save
+						save();
+						System.exit(0);
 					} else {
 						System.exit(0);
 					}
 				} else if (command[0].equals("save") || command[0].contains("save") || command[0].contains("s")) {
 					System.out.println("Game will attempt to save");
-					// save
+					save();
 				} else if (command[0].equals("flee") || command[0].contains("flee") || command[0].contains("f")) {
 
 				}
@@ -233,10 +261,29 @@ public class Controller {
         try {
             FileOutputStream fos = new FileOutputStream("Save.bat");
             ObjectOutput object = new ObjectOutputStream(fos);
-           // object.writeObject();
+          
+            
+            // ??? artifacts
+            
+            // TODO: get Monster object, if in the room???
+            
+            //Save Visited rooms
+            object.writeObject("Visited Rooms");
+            object.writeObject(vistedRooms);
+            
+            //save current room.... This should also have the puzzle object
+            object.writeObject("Current Room");
+            Room r = rooms.get(player.getLocation());
+            object.writeObject(r);
+            
+            //save player 
+            object.writeObject("Player");
+            object.writeObject(player);
+
             object.flush();
             object.close();
             System.out.println("Game is saved");
+            
         } catch (Exception ex){
             System.out.println("Serialization Error! Can't sava data.");
         }
