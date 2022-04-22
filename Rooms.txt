@@ -1,0 +1,44 @@
+Firelink Shrine
+1
+2,5,3,6
+This ancient and crumbling shrine is used as a gathering hub and safe haven for many trainers,
+merchants and other story related characters. This central bonfire will be visited often, since
+it is also a crossroads for many regions and shortcuts. The Crestfallen Warrior speaks about the
+Bell of the Awakening which could reside in Undead Parish or Blighttown.
+END
+Undead Parish
+2
+-,1,-,7
+The Undead Parish might have been once built by the followers of the Way of White. There seems
+to be an old church ahead. Inside the church, the altar has a broken handle of a bell.
+END
+Undead Burg
+3
+-,4,-,1
+The town developed around the Undead Parish became home to the many humans in Lordran. Sadly
+it was reduced to ruins after the onset of the Undead curse arrived.
+END
+Depths
+4
+3,-,-,5
+A maze of damp, dark corridors, where rats and slimes lurk behind every corner.
+END
+Blighttown
+5
+1,-,4,-
+A town that developed on the outskirts of the Demon Ruins/Lost Izalith whose inhabitants
+became infected by the Blight Pus. It is likely that many of the people here became servants
+of Quelaag and her fair sister. Inside the cave, the altar has a broken body of a bell.
+END
+The Catacombs
+6
+-,-,1,-
+Home to skeletons and necromancers, this area is often assailed by clerics of the Way of White,
+hoping to retrieve the lost Rite of Kindling.
+END
+Sen's Fortress
+7
+-,-,2,-
+Behind the Undead Parish, surrounded by forest and wildlife, the Sen's Fortress was constructed,
+to serve as a test for those who wish to enter the City of the Gods, Anor Londo.
+END

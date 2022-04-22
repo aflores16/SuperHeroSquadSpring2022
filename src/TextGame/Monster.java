@@ -1,76 +1,81 @@
 package TextGame;
 
+
 public class Monster {
-    private String monsterName_;
-    private int health_;
-    private int lowAttack_ ;
-	private int highAttack_;
-    private String location_;
+    private String name_;
+    private String id_;
     private String description_;
-    private int itemID_;
-    private double chanceOfFood;
-    private String foodName_;
-    private double chanceOfKey_;
-    private String keyName_;
+    private String location_;
+    private Integer health_;
+    private Integer attack_;
+    private Integer lowattack_;
+    private Integer highattack_;
+    private Double spawnrate_;
 
-    public Monster(int id, String location, String name, int hp, int lowAttk, int highAttk, double keyChance,
-                   String keyName, double foodChance, String foodName, String description){
-		itemID_ = id;
-		location_=location;
-		monsterName_ = name;
-		health_ = hp;
-		lowAttack_ = lowAttk;
-		highAttack_ = highAttk;
-		chanceOfKey_ = keyChance;
-		keyName_ =  keyName;
-		chanceOfFood = foodChance;
-		foodName_ = foodName;
-		description_ =description;
+
+    public Monster(String name, String id, String description, String location, Integer health, Integer attack, Integer lowattack, Integer highattack, Double spawnrate) {
+        name_ = name;
+        id_ = id;
+        description_ = description;
+        location_ = location;
+        health_ = health;
+        attack_ = attack;
+        lowattack_ = lowattack;
+        highattack_ = highattack;
+        spawnrate_ = spawnrate;
     }
 
-    public String getMonsterName_() {
-        return monsterName_;
+
+    public void look() {
+        System.out.println(description_);
     }
 
-    public int getHealth_() {
-        return health_;
+
+    public String getName () {
+        return name_;
     }
 
-    public int getLowAttack_() {
-        return lowAttack_;
-    }
-	
-	public int getHighAttack_() {
-        return highAttack_;
+    public String getId () {
+        return id_;
     }
 
-    public String getLocation_() {
+
+    public String getLocation () {
         return location_;
     }
 
-    public String getDescription_() {
+
+    public String getDescription () {
         return description_;
     }
 
-    public int getItemID_() {
-        return itemID_;
+    public Integer getHealth () {
+        return health_;
     }
 
-    public double getChanceOfFood_() {
-        return chanceOfFood;
+    public Integer getAttack () {
+        return attack_;
     }
-	
-	 public String getKeyName() {
-        return keyName_;
+
+    public Integer getLowattack () {
+        return lowattack_;
+    }
+
+    public Integer getHighattack () {
+        return highattack_;
+    }
+
+    public Double getSpawnrate () {
+        return spawnrate_;
+    }
+
+    public void setHealth(Integer health_) {
+        this.health_ = health_;
+    }
+
+    public void setAttack(Integer attack_) {
+        this.attack_ = attack_;
     }
 
 
-
-    public String getFoodName_() {
-        return foodName_;
-    }
-
-    public String getKeyName_() {
-        return keyName_;
-    }
 }

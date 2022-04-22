@@ -1,143 +1,117 @@
 package TextGame;
 
-/**
- * Item		
- * 
- * @author Bouba. C
- * 
- */
+
 public class Item {
-	
-	//Private data fields defining Item
-	private String itemId;
-	private String itemName;
-	private String location;
-	private String itemType;
-	private String itemDescription;
-	private String itemFeatures;
-	private String itemUsage;
-	private double itemStrength;
-	
-	//All args constructor
-	public Item(String itemId, String itemName, String location, String itemType, String itemDescription, String itemFeatures, String itemUsage, double itemStrength) {
-		this.itemId = itemId;
-		this.itemName = itemName;
-		this.location =location;
-		this.itemType = itemType;
-		this.itemDescription = itemDescription;
-		this.itemFeatures = itemFeatures;
-		this.itemUsage = itemUsage;
-		this.itemStrength = itemStrength;	
-	}
+    private String name_;
+    private String id_;
+    private String description_;
+    private String location_;
+    private String type_;
+    private Integer roomloot_;
+    private Integer mobloot_;
+    private Integer shoploot_;
+    private Integer quantity_;
+    private Integer attack_;
+    private Integer mag_;
+    private Integer maxmag_;
+    private Double value_;
+    private Double spawnrate_;
 
-	//Getters and setters
-	/**
-	 * @return the itemId
-	 */
-	public String getItemId() {
-		return itemId;
-	}
+    public Item(String name, String id, String description, String location, String type, Integer roomloot, Integer mobloot,
+                Integer shoploot, Integer quantity, Integer attack, Integer mag, Double value, Double spawnrate) {
+        name_ = name;
+        id_ = id;
+        description_ = description;
+        location_ = location;
+        type_ = type;
+        roomloot_ = roomloot;
+        mobloot_ = mobloot;
+        shoploot_ = shoploot;
+        quantity_ = quantity;
+        attack_ = attack;
+        mag_ = mag;
+        maxmag_ = mag;
+        value_ = value;
+        spawnrate_ = spawnrate;
+    }
 
-	/**
-	 * @param itemId 
-	 * the itemId to set
-	 */
-	public void setItemId(String itemId) {
-		this.itemId = itemId;
-	}
+    public void look() {
+        System.out.println(description_);
+    }
 
-	/**
-	 * @return the itemName
-	 */
-	public String getItemName() {
-		return itemName;
-	}
+    public String getName() {
+        return name_;
+    }
 
-	/**
-	 * @param itemName 
-	 * the itemName to set
-	 */
-	public void setItemName(String itemName) {
-		this.itemName = itemName;
-	}
+    public String getId() {
+        return id_;
+    }
 
-	/**
-	 * @return the itemType
-	 */
-	public String getItemType() {
-		return itemType;
-	}
+    public String getDescription() {
+        return description_;
+    }
 
-	/**
-	 * @param itemType 
-	 * the itemType to set
-	 */
-	public void setItemType(String itemType) {
-		this.itemType = itemType;
-	}
+    public String getLocation() {
+        return location_;
+    }
 
-	/**
-	 * @return the itemFeatures
-	 */
-	public String getItemFeatures() {
-		return itemFeatures;
-	}
+    public String getType() {
+        return type_;
+    }
 
-	/**
-	 * @param itemFeatures 
-	 * the itemFeatures to set
-	 */
-	public void setItemFeatures(String itemFeatures) {
-		this.itemFeatures = itemFeatures;
-	}
+    public Integer getRoomloot() {
+        return roomloot_;
+    }
 
-	/**
-	 * @return the itemUsage
-	 */
-	public String getItemUsage() {
-		return itemUsage;
-	}
+    public Integer getMobloot() {
+        return mobloot_;
+    }
 
-	/**
-	 * @param itemUsage 
-	 * the itemUsage to set
-	 */
-	public void setItemUsage(String itemUsage) {
-		this.itemUsage = itemUsage;
-	}
+    public Integer getShoploot() {
+        return shoploot_;
+    }
 
-	/**
-	 * @return the itemStrength
-	 */
-	public double getItemStrength() {
-		return itemStrength;
-	}
+    public Integer getQuantity() {
+        return quantity_;
+    }
 
-	/**
-	 * @param itemStrength 
-	 * the itemStrength to set
-	 */
-	public void setItemStrength(double itemStrength) {
-		this.itemStrength = itemStrength;
-	}
+    public Integer getAttack() {
+        return attack_;
+    }
 
-	public String getLocation() {
-		return location;
-	}
+    public Integer getMag() {
+        return mag_;
+    }
 
-	public String getItemDescription() {
-		return itemDescription;
-	}
+    public Integer getMaxmag() {
+        return maxmag_;
+    }
 
-	public void setItemDescription(String itemDescription) {
-		this.itemDescription = itemDescription;
-	}
+    public Double getValue() {
+        return value_;
+    }
 
-	@Override
-	public String toString() {
-		return "Item [itemId=" + itemId + ", itemName=" + itemName + ", itemType=" + itemType + ", itemFeatures="
-				+ itemFeatures + ", itemUsage=" + itemUsage + ", itemStrength=" + itemStrength + "]";
-	}
-	
-	
+    public Double getSpawnrate() {
+        return spawnrate_;
+    }
+
+    public void setRoomloot(Integer roomloot_) {
+        this.roomloot_ = roomloot_;
+    }
+
+    public void setMobloot(Integer mobloot_) {
+        this.mobloot_ = mobloot_;
+    }
+
+    public void setShoploot(Integer shoploot_) {
+        this.shoploot_ = shoploot_;
+    }
+
+    public void setQuantity(Integer quantity_) {
+        this.quantity_ = quantity_;
+    }
+
+    public void setMag(Integer mag_) {
+        this.mag_ = mag_;
+    }
 }

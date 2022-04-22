@@ -1,5 +1,6 @@
 package TextGame;
 
+
 public class Puzzle {
     private String name_;
     private String id_;
