@@ -184,6 +184,13 @@ class Read {
 
                 line = reader.readLine();
 
+                String[] items = line.split(",");
+                for (int i = 0; i < items.length; i++) {
+                    items[i] = items[i].trim();
+                }
+
+                line = reader.readLine();
+
                 String location = line.trim();
 
                 line = reader.readLine();
@@ -215,7 +222,7 @@ class Read {
                     line = reader.readLine();
                 }
 
-                monsters.put(location, new Monster(name, id, description, location, health, attack, lowattack, highattack, spawnrate));
+                monsters.put(location, new Monster(name, id, items, description, location, health, attack, lowattack, highattack, spawnrate));
 
                 line = reader.readLine();
 

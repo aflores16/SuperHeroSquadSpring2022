@@ -4,6 +4,7 @@ package TextGame;
 public class Monster {
     private String name_;
     private String id_;
+    private String[] items_;
     private String description_;
     private String location_;
     private Integer health_;
@@ -13,9 +14,10 @@ public class Monster {
     private Double spawnrate_;
 
 
-    public Monster(String name, String id, String description, String location, Integer health, Integer attack, Integer lowattack, Integer highattack, Double spawnrate) {
+    public Monster(String name, String id, String[] items, String description, String location, Integer health, Integer attack, Integer lowattack, Integer highattack, Double spawnrate) {
         name_ = name;
         id_ = id;
+        items_ = items;
         description_ = description;
         location_ = location;
         health_ = health;
@@ -37,6 +39,10 @@ public class Monster {
 
     public String getId () {
         return id_;
+    }
+
+    public String[] getItems () {
+        return items_;
     }
 
 

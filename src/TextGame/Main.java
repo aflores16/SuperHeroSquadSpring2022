@@ -249,6 +249,15 @@ public class Main {
                                             if (mob.getHealth() <= 0) {
                                                 mflags.add(rooms.get(player.getLocation()).getId());
                                                 System.out.println("GREAT ENEMY FELLED" + '\n');
+                                                for (int i = 0; i < mob.getItems().length; i++) {
+                                                    Room room = rooms.get(player.getLocation());
+                                                    System.out.print(mob.getItems()[i] + " ");
+                                                    if (room.getInventory().containsKey(mob.getItems()[i])) {
+                                                        room.getInventory().get(mob.getItems()[i]).setMobloot(0);
+                                                        room.getInventory().get(mob.getItems()[i]).setRoomloot(1);
+                                                    }
+                                                }
+                                                System.out.println("dropped in the room."  + '\n');
 
                                                 System.out.print(rooms.get(player.getLocation()).getName());
 

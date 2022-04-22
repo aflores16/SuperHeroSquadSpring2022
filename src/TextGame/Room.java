@@ -82,9 +82,11 @@ public class Room {
             System.out.println("No items in room, sorry.");
         } else {
             for (Map.Entry<String, Item> elt : items_.entrySet()) {
-                System.out.print(elt.getKey() + ", ");
+                if (items_.get(elt.getKey()).getRoomloot() == 1){
+                    System.out.print(elt.getKey() + " ");
+                }
             }
-            System.out.println(" are in the room.");
+            System.out.println("are in the room.");
         }
 
     }
