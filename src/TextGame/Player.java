@@ -259,11 +259,14 @@ public class Player {
 
         if (current.getInventory().containsKey(item)) {
             temp = current.getInventory().get(item);
-
-            current.getInventory().remove(item);
-            inventory_.put(temp.getName(), temp);
-            System.out.println(item + " was successfully added");
-            System.out.println("Type inspect <item name> to retrieve the description of the item");
+            if (temp.getRoomloot() == 1) {
+                current.getInventory().remove(item);
+                inventory_.put(temp.getName(), temp);
+                System.out.println(item + " was successfully added");
+                System.out.println("Type inspect <item name> to retrieve the description of the item");
+            } else {
+                System.out.println("Sorry, " + item + " is not in the room." + '\n');
+            }
         } else {
             System.out.println("Sorry, " + item + " is not in the room." + '\n');
         }
