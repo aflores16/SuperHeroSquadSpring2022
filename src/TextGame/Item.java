@@ -114,4 +114,8 @@ public class Item {
     public void setMag(Integer mag_) {
         this.mag_ = mag_;
     }
+    
+    public void inspect() {
+    	System.out.println(this.description_);
+    }
 }

@@ -110,6 +110,22 @@ public class Main {
                         System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                     }
 
+                }else if (command[0].equals("inspect") || (command[0].equals("i"))) {
+
+                    if (command.length >= 2) {
+                        String temp = "";
+
+                        for (int i = 1; i < command.length; i++) {
+                            temp = temp + command[i] + " ";
+                        }
+                        temp = temp.trim();
+                        Item it = items.get(temp);
+                        it.inspect();
+                        
+                    } else {
+                        System.out.println("Item not found/doesn't exist, please try again!" + '\n');
+                    }
+
                 } else if (command[0].equals("wear") || (command[0].equals("f"))) {
 
                     if (command.length == 1) {
