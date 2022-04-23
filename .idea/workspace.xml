@@ -63,7 +63,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/TextGame/Player.java</url>
-          <line>35</line>
+          <line>47</line>
           <properties class="TextGame.Player" method="getLife">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

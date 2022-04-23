@@ -54,3 +54,17 @@ Ammo
 0.00
 AmmoAmmo.
 END
+Key
+5
+1
+Key
+1
+0
+0
+1
+0
+0
+0.00
+1.00
+KeyKey.
+END

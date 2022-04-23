@@ -6,6 +6,7 @@ public class Player {
 
     private static String location_;
     private static String equipname_;
+    private static String keyname_;
     private static Map<String, Item> inventory_ = new HashMap<String, Item>();
     private static Map<String, Item> equipment_ = new HashMap<String, Item>();
     private static Integer health_;
@@ -23,6 +24,17 @@ public class Player {
         maxhealth_ = health;
         baseatt_ = attack;
         armor_ = 0;
+    }
+    public String getLocation() {
+        return location_;
+    }
+
+    public String getEquipname() {
+        return equipname_;
+    }
+
+    public String getKeyname() {
+        return keyname_;
     }
 
     public Integer getHealth() {
@@ -47,6 +59,10 @@ public class Player {
 
     public Integer getBaseatt() {
         return baseatt_;
+    }
+
+    public void setKeyname(String keyname_) {
+        this.keyname_ = keyname_;
     }
 
     public void setHealth(Integer health_) {
@@ -215,6 +231,53 @@ public class Player {
         }
     }
 
+    public void unlock(HashMap<String, Room> rooms) {
+        Room current = rooms.get(location_);
+
+        String[] temp = current.getNeighbors();
+
+        for (int i = 0; i < temp.length; i++) {
+            if (temp[i].contains("/")) {
+                String[] key = temp[i].split("/");
+                setKeyname(key[1]);
+
+            }
+        }
+
+        System.out.println(getKeyname());
+
+        if (inventory_.containsKey(keyname_)) {
+            if (current.getNeighbors()[0].contains("/")) {
+                int end = current.getNeighbors()[0].indexOf("/");
+                String[] neighbors = {current.getNeighbors()[0].substring(0,end), current.getNeighbors()[1], current.getNeighbors()[2], current.getNeighbors()[3]};
+                current.setNeighbors_(neighbors);
+                System.out.println("North was unlocked.");
+            } else if (current.getNeighbors()[1].contains("/")) {
+                int end = current.getNeighbors()[1].indexOf("/");
+                String[] neighbors = {current.getNeighbors()[0], current.getNeighbors()[1].substring(0,end), current.getNeighbors()[2], current.getNeighbors()[3]};
+                current.setNeighbors_(neighbors);
+                System.out.println("South was unlocked.");
+            } else if (current.getNeighbors()[2].contains("/")) {
+                int end = current.getNeighbors()[2].indexOf("/");
+                String[] neighbors = {current.getNeighbors()[0], current.getNeighbors()[1], current.getNeighbors()[2].substring(0,end), current.getNeighbors()[3]};
+                current.setNeighbors_(neighbors);
+                System.out.println("East was unlocked.");
+            } else if (current.getNeighbors()[3].contains("/")) {
+                int end = current.getNeighbors()[3].indexOf("/");
+                String[] neighbors = {current.getNeighbors()[0], current.getNeighbors()[1], current.getNeighbors()[2], current.getNeighbors()[3].substring(0,end)};
+                current.setNeighbors_(neighbors);
+                System.out.println("West was unlocked.");
+            } else {
+                System.out.println("Sorry, none of the doors are locked, try again!");
+            }
+
+
+        } else {
+            System.out.println("Sorry, the unlock command is unavailable, try again!");
+
+        }
+    }
+
     public void move(String direction, HashMap<String, Room> rooms) {
         direction = direction.toLowerCase();
         Room current = rooms.get(location_);
@@ -286,14 +349,6 @@ public class Player {
         } else {
             System.out.println("Sorry, " + item + " is not in your inventory." + '\n');
         }
-    }
-
-    public String getLocation() {
-        return location_;
-    }
-
-    public String getEquipname() {
-        return equipname_;
     }
 
     public String getInventory_() {

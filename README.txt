@@ -24,6 +24,7 @@ I = Ignore      Ignore monster to avoid battle
 R = Reload      Reload the gun in the current equipment
 Z = Shoot
 F = Wear
+C = Unlock
 
 Mob attack range set
 Item class remade

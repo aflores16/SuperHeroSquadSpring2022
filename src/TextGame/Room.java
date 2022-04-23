@@ -59,19 +59,25 @@ public class Room {
 
         System.out.println("Can exit to the ");
 
-        if (!neighbors_[0].equals("-")) {
+        if (neighbors_[0].contains("/")) {
+            System.out.print("NORTH/LOCKED, ");
+        } else if (!neighbors_[0].equals("-")) {
             System.out.print("NORTH, ");
         }
-
-        if (!neighbors_[1].equals("-")) {
+        if (neighbors_[1].contains("/")) {
+            System.out.print("SOUTH/LOCKED, ");
+        }else if (!neighbors_[1].equals("-")) {
             System.out.print("SOUTH, ");
         }
-
-        if (!neighbors_[2].equals("-")) {
+        if (neighbors_[2].contains("/")) {
+            System.out.print("EAST/LOCKED, ");
+        } else if (!neighbors_[2].equals("-")) {
             System.out.print("EAST, ");
         }
 
-        if (!neighbors_[3].equals("-")) {
+        if (neighbors_[3].contains("/")) {
+            System.out.print("WEST/LOCKED, ");
+        }else if (!neighbors_[3].equals("-")) {
             System.out.print("WEST, ");
         }
 
@@ -83,7 +89,7 @@ public class Room {
         } else {
             for (Map.Entry<String, Item> elt : items_.entrySet()) {
                 if (items_.get(elt.getKey()).getRoomloot() == 1){
-                    System.out.print(elt.getKey() + " ");
+                    System.out.print(elt.getKey() + ", ");
                 }
             }
             System.out.println("are in the room.");
@@ -119,4 +125,7 @@ public class Room {
         return monsters_;
     }
 
+    public void setNeighbors_(String[] neighbors_) {
+        this.neighbors_ = neighbors_;
+    }
 }

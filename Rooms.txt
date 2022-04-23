@@ -1,6 +1,6 @@
 Firelink Shrine
 1
-2,5,3,6
+2,5,3/key,6
 This ancient and crumbling shrine is used as a gathering hub and safe haven for many trainers,
 merchants and other story related characters. This central bonfire will be visited often, since
 it is also a crossroads for many regions and shortcuts. The Crestfallen Warrior speaks about the

@@ -67,6 +67,25 @@ public class Main {
                         System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                     }
 
+                } else if (command[0].equals("unlock") || (command[0].equals("c"))) {
+
+                    if (command.length == 1) {
+
+                        player.unlock(rooms);
+
+                    } else {
+                        System.out.println("Item not found/doesn't exist, please try again!" + '\n');
+                    }
+
+                } else if (command[0].equals("reload") || (command[0].equals("r"))) {
+
+                    if (command.length == 1) {
+
+                        player.reload();
+                    } else {
+                        System.out.println("Ammo not found/doesn't exist, please try again!" + '\n');
+                    }
+
                 } else if (command[0].equals("equip") || (command[0].equals("x"))) {
 
                     if (command.length >= 2) {
@@ -87,6 +106,15 @@ public class Main {
                     if (command.length == 1) {
 
                         player.unequip();
+                    } else {
+                        System.out.println("Item not found/doesn't exist, please try again!" + '\n');
+                    }
+
+                } else if (command[0].equals("wear") || (command[0].equals("f"))) {
+
+                    if (command.length == 1) {
+
+                        player.wear();
                     } else {
                         System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                     }
@@ -251,7 +279,7 @@ public class Main {
                                                 System.out.println("GREAT ENEMY FELLED" + '\n');
                                                 for (int i = 0; i < mob.getItems().length; i++) {
                                                     Room room = rooms.get(player.getLocation());
-                                                    System.out.print(mob.getItems()[i] + " ");
+                                                    System.out.print(mob.getItems()[i] + ", ");
                                                     if (room.getInventory().containsKey(mob.getItems()[i])) {
                                                         room.getInventory().get(mob.getItems()[i]).setMobloot(0);
                                                         room.getInventory().get(mob.getItems()[i]).setRoomloot(1);
@@ -293,6 +321,15 @@ public class Main {
                                                 if (mob.getHealth() <= 0) {
                                                     mflags.add(rooms.get(player.getLocation()).getId());
                                                     System.out.println("GREAT ENEMY FELLED" + '\n');
+                                                    for (int i = 0; i < mob.getItems().length; i++) {
+                                                        Room room = rooms.get(player.getLocation());
+                                                        System.out.print(mob.getItems()[i] + ", ");
+                                                        if (room.getInventory().containsKey(mob.getItems()[i])) {
+                                                            room.getInventory().get(mob.getItems()[i]).setMobloot(0);
+                                                            room.getInventory().get(mob.getItems()[i]).setRoomloot(1);
+                                                        }
+                                                    }
+                                                    System.out.println("dropped in the room."  + '\n');
 
                                                     System.out.print(rooms.get(player.getLocation()).getName());
 
