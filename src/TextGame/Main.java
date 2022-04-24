@@ -132,7 +132,7 @@ public class Main {
                         System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                     }
 
-                } else if (command[0].equals("wear") || (command[0].equals("f"))) {
+                } else if (command[0].equals("wear") || (command[0].equals("f")) || command[0].contains("we")) {
 
                     if (command.length == 1) {
 
