@@ -64,12 +64,7 @@ class Read {
 
                 String id = reader.readLine().trim();
 
-                line = reader.readLine();
-
-                String[] location = line.split(",");
-                for (int i = 0; i < location.length; i++) {
-                    location[i] = location[i].trim();
-                }
+                String location = reader.readLine().trim();
 
                 String type = reader.readLine().trim();
 

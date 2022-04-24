@@ -5,7 +5,7 @@ public class Item {
     private String name_;
     private String id_;
     private String description_;
-    private String[] location_;
+    private String location_;
     private String type_;
     private String roomloot_;
     private String mobloot_;
@@ -17,7 +17,7 @@ public class Item {
     private Double value_;
     private Double spawnrate_;
 
-    public Item(String name, String id, String description, String[] location, String type, String roomloot, String mobloot,
+    public Item(String name, String id, String description, String location, String type, String roomloot, String mobloot,
                 String shoploot, Integer quantity, Integer attack, Integer mag, Double value, Double spawnrate) {
         name_ = name;
         id_ = id;
@@ -51,7 +51,7 @@ public class Item {
         return description_;
     }
 
-    public String[] getLocation() {
+    public String getLocation() {
         return location_;
     }
 

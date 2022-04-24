@@ -31,12 +31,11 @@ public class Room {
     public void setItems(HashMap<String, Item> items) {
         for (Map.Entry<String, Item> elt : items.entrySet()) {
 
-            for (int i = 0; i < elt.getValue().getLocation().length; i++) {
-                if (elt.getValue().getLocation()[i].equals(id_) && elt.getValue().getSpawnrate() > Math.random()) {
+            if (elt.getValue().getLocation().equals(id_) && elt.getValue().getSpawnrate() > Math.random()) {
 
-                    items_.put(elt.getKey(), elt.getValue());
-                }
+                items_.put(elt.getKey(), elt.getValue());
             }
+
         }
     }
 
