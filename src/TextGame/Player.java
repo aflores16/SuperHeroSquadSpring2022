@@ -249,9 +249,7 @@ public class Player {
             }
         }
 
-        System.out.println(getKeyname());
-
-        if (inventory_.containsKey(keyname_)) {
+        if (inventory_.containsKey(getKeyname())) {
             if (current.getNeighbors()[0].contains("/")) {
                 int end = current.getNeighbors()[0].indexOf("/");
                 String[] neighbors = {current.getNeighbors()[0].substring(0,end), current.getNeighbors()[1], current.getNeighbors()[2], current.getNeighbors()[3]};
@@ -327,7 +325,7 @@ public class Player {
 
         if (current.getInventory().containsKey(item)) {
             temp = current.getInventory().get(item);
-            if (temp.getRoomloot() == 1) {
+            if (temp.getRoomloot().equals("1")) {
                 if (rooms.get(location_).getPuzzle().get(location_).getName().equals(item)) {
                     journal_.put(item, rooms.get(location_).getPuzzle().get(location_));
                     System.out.println(item + " was successfully added to journal");
@@ -354,7 +352,7 @@ public class Player {
 
         if (inventory_.containsKey(item)) {
             temp = inventory_.get(item);
-            if (temp.getType().contains("Key")) {
+            if (temp.getType().equals("Key")) {
                 journal_.remove(item);
                 System.out.println(item + " was successfully removed from journal");
                 inventory_.remove(item);

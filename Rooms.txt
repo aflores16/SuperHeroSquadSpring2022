@@ -1,44 +1,250 @@
-Firelink Shrine
+Main Hallway 1
+0
 1
-2,5,3/key,6
-This ancient and crumbling shrine is used as a gathering hub and safe haven for many trainers,
-merchants and other story related characters. This central bonfire will be visited often, since
-it is also a crossroads for many regions and shortcuts. The Crestfallen Warrior speaks about the
-Bell of the Awakening which could reside in Undead Parish or Blighttown.
+R00
+Crew Cabin 1, Crew Cabin 2, Engine Room/engine room keycard, Main Hallway 2
+You are on deck 1. You entered the first main hallway.
+Plenty of rooms to search for your target here. To your north and south are crew cabins.
+To your left lies the engine room, and right lies the second main hallway.
 END
-Undead Parish
+Main Hallway 2
+1
+1
+R01
+Stateroom 1, Stateroom 2, Main Hallway 1, Forward Hallway 1
+You are on deck 1. You entered the second main hallway. To your north and south are staterooms.
+To your left lies the first main hallway, and right lies the forward hallway.
+END
+Engine Room
 2
--,1,-,7
-The Undead Parish might have been once built by the followers of the Way of White. There seems
-to be an old church ahead. Inside the church, the altar has a broken handle of a bell.
+1
+R02
+-,-,-,Main Hallway 1
+You are on deck 1. You entered the engine room. To your east lies the first main hallway.
+Beyond the cloud of steam, you see the engine core in the center of the room, extending
+from the floor to the ceiling. At your feet, you see the silhouette of the engineer’s warm corpse.
 END
-Undead Burg
+Crew Cabin 1
 3
--,4,-,1
-The town developed around the Undead Parish became home to the many humans in Lordran. Sadly
-it was reduced to ruins after the onset of the Undead curse arrived.
+1
+R03
+-, Main Hallway 1, -, -
+You are on deck 1. You entered the crew cabin. Not much of value in here…
+To your south lies the second main hallway.
 END
-Depths
+Crew Cabin 2
 4
-3,-,-,5
-A maze of damp, dark corridors, where rats and slimes lurk behind every corner.
+1
+R04
+Main Hallway 1,-,-,-
+You are on deck 1. You entered the crew cabin. You see a chest in the corner of
+the room with the Syndicate’s insignia etched in the wood. To your north lies
+the first main hallway.
 END
-Blighttown
+Stateroom 1
 5
-1,-,4,-
-A town that developed on the outskirts of the Demon Ruins/Lost Izalith whose inhabitants
-became infected by the Blight Pus. It is likely that many of the people here became servants
-of Quelaag and her fair sister. Inside the cave, the altar has a broken body of a bell.
+1
+R05
+-, Main Hallway 2, -, -
+You are on deck 1. You entered the stateroom.
+This room is filled with empty luggage.
+To your south lies the second main hallway.
 END
-The Catacombs
+Stateroom 2
 6
--,-,1,-
-Home to skeletons and necromancers, this area is often assailed by clerics of the Way of White,
-hoping to retrieve the lost Rite of Kindling.
+1
+R06
+Main Hallway 2,-,-,-
+You are on deck 1. You entered the stateroom.
+This is a small room filled with weapons cases and luggage of coins.
+To the north lies the second main hallway
 END
-Sen's Fortress
+Forward Hallway 1
 7
--,-,2,-
-Behind the Undead Parish, surrounded by forest and wildlife, the Sen's Fortress was constructed,
-to serve as a test for those who wish to enter the City of the Gods, Anor Londo.
+1
+R07
+Port Hallway 1, Starboard Hallway 1, Main Hallway 2, Lower Pool Deck
+You are on deck 1. You entered the forward hallway. To your north and
+south are the port and starboard hallways. To your west lies the main
+hallway and east lies the lower pool.
+END
+Port Hallway 1
+8
+1
+R08
+-, Forward Hallway 1, Port Hallway 2, -
+You are on deck 1. You entered the port hallway. You hear plates
+colliding in the distance. You don’t see any clues to Victor’s whereabouts.
+To your west lies the stairs to deck 2, your south lies the forward hallway.
+END
+Starboard Hallway 1
+9
+1
+R09
+Forward Hallway 1,-,Starboard Hallway 2,-
+You entered the starboard hallway. You hear exercise equipment in the distance.
+You don’t see any clues to Victor’s whereabouts here. To your west lies the stairs to
+deck 2 and north lies the forward hallway
+END
+Lower Pool Deck
+10
+1
+R10
+Upper Pool Deck,-,Forward Hallway 1,-
+You are on deck 1. You entered the lower pool deck. From beyond the ship’s bow, you
+can see threads of plasma igniting in a nebula. To your north lies the upper pool deck
+on deck 2 and west lies the forward hallway.
+END
+Galley
+11
+2
+R11
+-,-,-,Main Hallway 3
+You are on deck 2. You entered the galley. Several passengers sit around the room, while
+waiters approach them with serving platters of food.
+To your east lies the main hallway.
+END
+Main Hallway 3
+12
+2
+R12
+Oceanview Room 1,Fitness Center,Galley,Forward Hallway 2
+You are on deck 2. You entered the main hallway. You hear much chattering in the rooms around you.
+You remember the intel you gathered on a previous mission about a trader on this deck… To your west
+lies the galley, east lies the forward hallway, north lies the Oceanview room, and south lies the fitness center
+END
+Oceanview Room 1
+13
+2
+R13
+-, Main Hallway 3, - ,-
+You are on deck 2. You entered the Oceanview room. You see a cache of computer data
+loaded on the console in the far corner of the room. It
+contains data on the Syndicate… To your south lies the main hallway.
+END
+Fitness Center
+14
+2
+R14
+Main Hallway 3, -,-,-
+You are on deck 2. You entered the fitness center. You see several exercise
+mats on the floor and bars on the wall. To your north lies the main hallway.
+END
+Forward Hallway 2
+15
+2
+R15
+Port Hallway 2,Starboard Hallway 2,Upper Pool Deck,Main Hallway 3
+You are on deck 2. You entered the fitness center. You see several exercise
+mats on the floor and bars on the wall. To your north lies the main hallway.
+END
+Port Hallway 2
+16
+2
+R16
+-, Forward Hallway 2,Port Hallway 3,Port Hallway 1
+You are on deck 2. You entered the port hallway. To your west lies the stairs to deck 3,
+east lies the stairs to the port hallway on deck 1, and south lies the forward hallway.
+END
+Starboard Hallway 2
+17
+2
+R17
+Forward Hallway 2, - , Starboard Hallway 3,-
+You are on deck 2. You entered the starboard hallway. To your west lies the stairs to deck
+3, east lies the stairs to starboard hallway on deck 1, and north lies the forward hallway.
+END
+Upper Pool Deck
+18
+2
+R18
+Comedy Club, Lower Pool Deck, Forward Hallway 2, -
+You are on deck 2. You entered the upper pool deck. The view of Earth is beautiful from
+here. To your south lies the lower pool deck, north lies the comedy club, and west lies the
+forward hallway.
+END
+Captain's Cabin
+19
+3
+R19
+-,-,-,Main Hallway 4
+You are on deck 3. You entered the captain’s cabin. You see a shadow of something on
+the floor beside the chaise. You walk closer…it’s the captain! To your east lies the main hallway.
+END
+Main Hallway 4
+20
+3
+R20
+OceanView Room 2,Nightclub,Captain's Cabin,Forward Hallway 3
+You are on deck 3. You entered the main hallway. You can hear the steering wheel creaking from above. To
+your west lies the captain’s cabin, east lies the forward hallway, north lies the Oceanview room, and south lies the nightclub.
+END
+OceanView Room 2
+21
+3
+-,Main Hallway 4,-,-
+You are on deck 3. You entered the Oceanview room. Such a large room with windows facing the stars and planets outside.
+You can see a glimpse of the crescent moon. To your south lies the main hallway.
+END
+Nightclub
+22
+3
+R22
+Main Hallway 4,-,-,-
+You are on deck 3. You entered the nightclub.
+You see a lot of flashing lights and people dancing in the center of the room.
+To your north lies the main hallway.
+END
+Comedy Club
+23
+3
+R23
+Casino, Upper Pool Deck, Forward Hallway 3, -
+You are on deck 3. You entered the comedy club. The room is filled with people entertained by the
+comedian on the stage. To your west lies the forward hallway, north lies the casino, and
+south lies the upper pool deck.
+END
+Casino
+24
+3
+R24
+-,Comedy Club,-,-
+You are on deck 3. You entered the casino. You see many lights flashing and bells ringing.
+Based on your intelligence report, you may be able to trade using the gold won here…
+To your south lies the comedy club.
+END
+Port Hallway 3
+25
+3
+R25
+-,Forward Hallway 3,Port Hallway 2,Bridge
+You are on deck 3. You entered the port hallway.
+You are close… To your west is the port hallway
+on deck 2, east is the bridge.
+END
+Starboard Hallway 3
+26
+3
+R26
+Forward Hallway 3,-,Starboard Hallway 2,Bridge
+You are on deck 3. You entered the port hallway. You are close…
+To your west is the starboard hallway on deck 2, east is the bridge.
+END
+Forward Hallway 3
+27
+3
+R27
+Casino,Starboard Hallway 3,Main Hallway 4,Comedy Club
+You are on deck 3. You entered the forward hallway. Victor must be very close now…
+To your north lies the port hallway, south lies the starboard hallway, east lies the
+comedy club, and west lies the main hallway.
+END
+Bridge
+28
+4
+R28
+-,-,-,-
+You are on deck 4. You entered the bridge. You finally located
+Victor, the head the Intergalactic Syndicate.
+CODENAME, your only escape is death…
 END

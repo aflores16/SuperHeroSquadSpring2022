@@ -13,9 +13,13 @@ class Read {
             HashMap<String, Room> rooms = new HashMap<String, Room>();
 
             while (line != null) {
-                String name = line;
+                String name = line.trim();
 
-                String id = reader.readLine();
+                String id = reader.readLine().trim();
+
+                String deck = reader.readLine().trim();
+
+                String roomid = reader.readLine().trim();
 
                 line = reader.readLine();
 
@@ -32,7 +36,7 @@ class Read {
                     line = reader.readLine();
                 }
 
-                rooms.put(id, new Room(name, id, neighbors, description, items, puzzles, monsters));
+                rooms.put(id, new Room(name, id, deck, roomid, neighbors, description, items, puzzles, monsters));
 
                 line = reader.readLine();
 
@@ -54,53 +58,43 @@ class Read {
             HashMap<String, Item> items = new HashMap<String, Item>();
 
             while (line != null) {
-                String name = line;
+                String name = line.trim();
 
                 name = name.toLowerCase();
 
-                String id = reader.readLine();
+                String id = reader.readLine().trim();
 
-                line = reader.readLine();
+                String location = reader.readLine().trim();
 
-                String location = line.trim();
+                String type = reader.readLine().trim();
 
-                line = reader.readLine();
+                String roomloot = reader.readLine().trim();
 
-                String type = line.trim();
+                String mobloot = reader.readLine().trim();
 
-                line = reader.readLine();
+                String shoploot = reader.readLine().trim();
 
-                Integer roomloot = Integer.parseInt(line);
-
-                line = reader.readLine();
-
-                Integer mobloot = Integer.parseInt(line);
-
-                line = reader.readLine();
-
-                Integer shoploot = Integer.parseInt(line);
-
-                line = reader.readLine();
+                line = reader.readLine().trim();
 
                 Integer quantity = Integer.parseInt(line);
 
-                line = reader.readLine();
+                line = reader.readLine().trim();
 
                 Integer attack = Integer.parseInt(line);
 
-                line = reader.readLine();
+                line = reader.readLine().trim();
 
                 Integer mag = Integer.parseInt(line);
 
-                line = reader.readLine();
+                line = reader.readLine().trim();
 
                 Double value = Double.parseDouble(line);
 
-                line = reader.readLine();
+                line = reader.readLine().trim();
 
                 Double spawnrate = Double.parseDouble(line);
 
-                line = reader.readLine();
+                line = reader.readLine().trim();
 
                 String description = "";
 

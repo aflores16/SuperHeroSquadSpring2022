@@ -307,8 +307,8 @@ public class Main {
                                                     Room room = rooms.get(player.getLocation());
                                                     System.out.print(mob.getItems()[i] + ", ");
                                                     if (room.getInventory().containsKey(mob.getItems()[i])) {
-                                                        room.getInventory().get(mob.getItems()[i]).setMobloot(0);
-                                                        room.getInventory().get(mob.getItems()[i]).setRoomloot(1);
+                                                        room.getInventory().get(mob.getItems()[i]).setMobloot("0");
+                                                        room.getInventory().get(mob.getItems()[i]).setRoomloot("1");
                                                     }
                                                 }
                                                 System.out.println("dropped in the room."  + '\n');
@@ -377,8 +377,8 @@ public class Main {
                                                         Room room = rooms.get(player.getLocation());
                                                         System.out.print(mob.getItems()[i] + ", ");
                                                         if (room.getInventory().containsKey(mob.getItems()[i])) {
-                                                            room.getInventory().get(mob.getItems()[i]).setMobloot(0);
-                                                            room.getInventory().get(mob.getItems()[i]).setRoomloot(1);
+                                                            room.getInventory().get(mob.getItems()[i]).setMobloot("0");
+                                                            room.getInventory().get(mob.getItems()[i]).setRoomloot("1");
                                                         }
                                                     }
                                                     System.out.println("dropped in the room."  + '\n');

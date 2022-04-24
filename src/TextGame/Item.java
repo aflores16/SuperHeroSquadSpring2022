@@ -7,9 +7,9 @@ public class Item {
     private String description_;
     private String location_;
     private String type_;
-    private Integer roomloot_;
-    private Integer mobloot_;
-    private Integer shoploot_;
+    private String roomloot_;
+    private String mobloot_;
+    private String shoploot_;
     private Integer quantity_;
     private Integer attack_;
     private Integer mag_;
@@ -17,8 +17,8 @@ public class Item {
     private Double value_;
     private Double spawnrate_;
 
-    public Item(String name, String id, String description, String location, String type, Integer roomloot, Integer mobloot,
-                Integer shoploot, Integer quantity, Integer attack, Integer mag, Double value, Double spawnrate) {
+    public Item(String name, String id, String description, String location, String type, String roomloot, String mobloot,
+                String shoploot, Integer quantity, Integer attack, Integer mag, Double value, Double spawnrate) {
         name_ = name;
         id_ = id;
         description_ = description;
@@ -59,15 +59,15 @@ public class Item {
         return type_;
     }
 
-    public Integer getRoomloot() {
+    public String getRoomloot() {
         return roomloot_;
     }
 
-    public Integer getMobloot() {
+    public String getMobloot() {
         return mobloot_;
     }
 
-    public Integer getShoploot() {
+    public String getShoploot() {
         return shoploot_;
     }
 
@@ -95,15 +95,15 @@ public class Item {
         return spawnrate_;
     }
 
-    public void setRoomloot(Integer roomloot_) {
+    public void setRoomloot(String roomloot_) {
         this.roomloot_ = roomloot_;
     }
 
-    public void setMobloot(Integer mobloot_) {
+    public void setMobloot(String mobloot_) {
         this.mobloot_ = mobloot_;
     }
 
-    public void setShoploot(Integer shoploot_) {
+    public void setShoploot(String shoploot_) {
         this.shoploot_ = shoploot_;
     }
 
