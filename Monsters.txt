@@ -4,8 +4,8 @@ food,armor
 6
 4000
 0
-20
-25
+200
+250
 1.00
 Holder of one of the four Lord Souls, Gravelord Nito was among the lords to wage war against
 the dragons. As the Lord of Death, Nito rules over the dead in The Catacombs and resides within

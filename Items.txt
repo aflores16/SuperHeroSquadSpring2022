@@ -54,7 +54,7 @@ Ammo
 0.00
 AmmoAmmo.
 END
-Key
+Keycard
 5
 1
 Key

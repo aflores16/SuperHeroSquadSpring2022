@@ -9,6 +9,7 @@ public class Player {
     private static String keyname_;
     private static Map<String, Item> inventory_ = new HashMap<String, Item>();
     private static Map<String, Item> equipment_ = new HashMap<String, Item>();
+    private static Map<String, Puzzle> journal_ = new HashMap<String, Puzzle>();
     private static Integer health_;
     private static Integer attack_;
     private static Integer life_;
@@ -59,6 +60,10 @@ public class Player {
 
     public Integer getBaseatt() {
         return baseatt_;
+    }
+
+    public void setLocation(String location_) {this.location_ = location_;
+
     }
 
     public void setKeyname(String keyname_) {
@@ -323,10 +328,19 @@ public class Player {
         if (current.getInventory().containsKey(item)) {
             temp = current.getInventory().get(item);
             if (temp.getRoomloot() == 1) {
-                current.getInventory().remove(item);
-                inventory_.put(temp.getName(), temp);
-                System.out.println(item + " was successfully added");
-                System.out.println("Type inspect <item name> to retrieve the description of the item");
+                if (rooms.get(location_).getPuzzle().get(location_).getName().equals(item)) {
+                    journal_.put(item, rooms.get(location_).getPuzzle().get(location_));
+                    System.out.println(item + " was successfully added to journal");
+                    current.getInventory().remove(item);
+                    inventory_.put(temp.getName(), temp);
+                    System.out.println(item + " was successfully added inventory");
+                    System.out.println("Type inspect <item name> to retrieve the description of the item");
+                } else {
+                    current.getInventory().remove(item);
+                    inventory_.put(temp.getName(), temp);
+                    System.out.println(item + " was successfully added");
+                    System.out.println("Type inspect <item name> to retrieve the description of the item");
+                }
             } else {
                 System.out.println("Sorry, " + item + " is not in the room." + '\n');
             }
@@ -340,12 +354,23 @@ public class Player {
 
         if (inventory_.containsKey(item)) {
             temp = inventory_.get(item);
-            inventory_.remove(item);
+            if (temp.getType().contains("Key")) {
+                journal_.remove(item);
+                System.out.println(item + " was successfully removed from journal");
+                inventory_.remove(item);
 
-            Room current = rooms.get(location_);
+                Room current = rooms.get(location_);
 
-            current.getInventory().put(temp.getName(), temp);
-            System.out.println(item + " was successfully dropped");
+                current.getInventory().put(temp.getName(), temp);
+                System.out.println(item + " was successfully dropped from inventory");
+            } else {
+                inventory_.remove(item);
+
+                Room current = rooms.get(location_);
+
+                current.getInventory().put(temp.getName(), temp);
+                System.out.println(item + " was successfully dropped");
+            }
         } else {
             System.out.println("Sorry, " + item + " is not in your inventory." + '\n');
         }
@@ -383,6 +408,19 @@ public class Player {
             for (Map.Entry<String, Item> elt : inventory_.entrySet()) {
                 System.out.println(elt.getKey() + " " +elt.getValue().getQuantity());
             }
+        }
+    }
+
+    public void getJournal() {
+        if (journal_.isEmpty()) {
+            System.out.println("Journal is empty" + '\n');
+        } else {
+            System.out.println("Journal:");
+            for (Map.Entry<String, Puzzle> elt : journal_.entrySet()) {
+                System.out.println(elt.getKey());
+                System.out.println(elt.getValue().getDescription());
+            }
+            System.out.println();
         }
     }
 

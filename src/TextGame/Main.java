@@ -22,13 +22,19 @@ public class Main {
         try (Scanner in = new Scanner(System.in)) {
             System.out.println('\n' + "Welcome to Dark Souls" + '\n');
             System.out.println("Type quit or q to quit the game" + '\n');
+            System.out.println("Enter your code name!");
+            String codeName = in.nextLine();
+            codeName = codeName.toUpperCase();
+            System.out.println("Hello " + codeName + '\n');
             System.out.println(rooms.get(player.getLocation()).getName() + " not visited" + '\n');
             System.out.println(rooms.get(player.getLocation()).getDescription());
             System.out.println("Type look or l to retrieve the description of the room");
             flags.add("1");
+
+
             Boolean again = true;
 
-
+            GAME:
             while (again) {
                 String input = in.nextLine();
                 input = input.toLowerCase();
@@ -164,13 +170,13 @@ public class Main {
                         if (!flags.contains(rooms.get(player.getLocation()).getId())) {
                             System.out.println(" not visited" + '\n');
                             flags.add(rooms.get(player.getLocation()).getId());
-                        }else {
+                        } else {
                             System.out.println(" visited" + '\n');
 
                         }
                         if (player.getEquipment().containsKey(temp)) {
                             player.looke(temp);
-                        }else {
+                        } else {
                             player.look(temp);
                         }
                     } else if (command.length == 1) {
@@ -179,7 +185,7 @@ public class Main {
                         if (!flags.contains(rooms.get(player.getLocation()).getId())) {
                             System.out.println(" not visited" + '\n');
                             flags.add(rooms.get(player.getLocation()).getId());
-                        }else {
+                        } else {
                             System.out.println(" visited" + '\n');
 
                         }
@@ -187,6 +193,10 @@ public class Main {
                     } else {
                         System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                     }
+
+                } else if (command[0].equals("journal") || (command[0].equals("j"))) {
+
+                    player.getJournal();
 
                 } else if (command[0].equals("backpack") || (command[0].equals("b"))) {
 
@@ -264,7 +274,7 @@ public class Main {
                                 command = input.split(" ");
                                 if (command[0].equals("battle") || command[0].equals("b")) {
                                     while (!(player.getHealth() <= 0 || mob.getHealth() <= 0)) {
-                                        System.out.print("Player                HP  " + player.getHealth());
+                                        System.out.print(codeName + "                HP  " + player.getHealth());
                                         if (player.getArmor() > 0) {
                                             System.out.println("/" + player.getArmor());
                                         } else {
@@ -315,13 +325,37 @@ public class Main {
                                                 System.out.println("Type look or l to retrieve the description of the room");
 
                                             } else if (player.getHealth() <= 0) {
+                                                player.setLife(player.getLife() - 1);
                                                 System.out.println("YOU DIED" + '\n');
+                                                System.out.println("Life: " + player.getLife());
+                                                if (player.getLife() > 0) {
+                                                    System.out.println("Type continue or c to continue this game");
+                                                }
                                                 System.out.println("Type start or s to start a new game");
                                                 System.out.println("Type quit or q to quit the game");
                                                 input = in.nextLine();
                                                 input = input.toLowerCase();
                                                 command = input.split(" ");
-                                                if (command[0].equals("start") || command[0].equals("s")) {
+                                                if (command[0].equals("continue") || command[0].equals("c")) {
+                                                    if (player.getLife() > 0) {
+                                                        player.setLocation("1");
+                                                        player.setHealth(player.getMaxhealth());
+                                                        System.out.println("Hello " + codeName.toUpperCase() + '\n');
+                                                        System.out.print(rooms.get(player.getLocation()).getName());
+                                                        if (!flags.contains(rooms.get(player.getLocation()).getId())) {
+                                                            System.out.println(" not visited" + '\n');
+                                                            flags.add(rooms.get(player.getLocation()).getId());
+                                                        }else {
+                                                            System.out.println(" visited" + '\n');
+                                                        }
+                                                        System.out.println(rooms.get(player.getLocation()).getDescription());
+                                                        System.out.println("Type look or l to retrieve the description of the room");
+                                                        continue GAME;
+                                                    } else {
+                                                        System.out.println("Invalid command");
+                                                    }
+
+                                                } else if (command[0].equals("start") || command[0].equals("s")) {
                                                     player.getInventory().clear();
                                                     player.getEquipment().clear();
                                                     Main.main(args);
@@ -329,6 +363,8 @@ public class Main {
                                                 } else if (command[0].equals("quit") || command[0].equals("q")) {
                                                     System.out.println("Thank you for playing!");
                                                     again = false;
+                                                } else {
+                                                    System.out.println("Invalid command");
                                                 }
                                             }
                                         } else if (command[0].equals("shoot") || (command[0].equals("z"))) {
@@ -359,13 +395,37 @@ public class Main {
                                                     System.out.println("Type look or l to retrieve the description of the room");
 
                                                 } else if (player.getHealth() <= 0) {
+                                                    player.setLife(player.getLife() - 1);
                                                     System.out.println("YOU DIED" + '\n');
+                                                    System.out.println("Life: " + player.getLife());
+                                                    if (player.getLife() > 0) {
+                                                        System.out.println("Type continue or c to continue this game");
+                                                    }
                                                     System.out.println("Type start or s to start a new game");
                                                     System.out.println("Type quit or q to quit the game");
                                                     input = in.nextLine();
                                                     input = input.toLowerCase();
                                                     command = input.split(" ");
-                                                    if (command[0].equals("start") || command[0].equals("s")) {
+                                                    if (command[0].equals("continue") || command[0].equals("c")) {
+                                                        if (player.getLife() > 0) {
+                                                            player.setLocation("1");
+                                                            player.setHealth(player.getMaxhealth());
+                                                            System.out.println("Hello " + codeName.toUpperCase() + '\n');
+                                                            System.out.print(rooms.get(player.getLocation()).getName());
+                                                            if (!flags.contains(rooms.get(player.getLocation()).getId())) {
+                                                                System.out.println(" not visited" + '\n');
+                                                                flags.add(rooms.get(player.getLocation()).getId());
+                                                            }else {
+                                                                System.out.println(" visited" + '\n');
+                                                            }
+                                                            System.out.println(rooms.get(player.getLocation()).getDescription());
+                                                            System.out.println("Type look or l to retrieve the description of the room");
+                                                            continue GAME;
+                                                        } else {
+                                                            System.out.println("Invalid command");
+                                                        }
+
+                                                    } else if (command[0].equals("start") || command[0].equals("s")) {
                                                         player.getInventory().clear();
                                                         player.getEquipment().clear();
                                                         Main.main(args);
@@ -373,6 +433,8 @@ public class Main {
                                                     } else if (command[0].equals("quit") || command[0].equals("q")) {
                                                         System.out.println("Thank you for playing!");
                                                         again = false;
+                                                    } else {
+                                                        System.out.println("Invalid command");
                                                     }
                                                 }
                                             } else {
