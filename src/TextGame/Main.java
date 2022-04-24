@@ -20,16 +20,16 @@ public class Main {
 
 
         try (Scanner in = new Scanner(System.in)) {
-            System.out.println('\n' + "Welcome to Dark Souls" + '\n');
-            System.out.println("Type quit or q to quit the game" + '\n');
-            System.out.println("Enter your code name!");
-            String codeName = in.nextLine();
-            codeName = codeName.toUpperCase();
-            System.out.println("Hello " + codeName + '\n');
+            System.out.println('\n' + "Enter your codename:" + '\n');
+            String codename = in.nextLine();
+            codename = codename.toUpperCase();
+            System.out.println("You snuck aboard and landed in the");
+            System.out.println("hallway on the first deck.");
+            System.out.println("Find your target " + codename + "...\n");
             System.out.println(rooms.get(player.getLocation()).getName() + " not visited" + '\n');
             System.out.println(rooms.get(player.getLocation()).getDescription());
             System.out.println("Type look or l to retrieve the description of the room");
-            flags.add("1");
+            flags.add("0");
 
 
             Boolean again = true;
@@ -257,9 +257,8 @@ public class Main {
                         mob.setAttack(min + (int)(Math.random() * ((max - min) + 1 )));
 
                         while (!mflags.contains(rooms.get(player.getLocation()).getId())) {
-                            System.out.println('\n' + "BOSS ROOM" + '\n');
-                            System.out.println("There appears to be a monster in the room");
-                            System.out.println("Type examine or m to examine the monster of the room");
+                            System.out.println(codename + " is fighting " + mob.getName() + ".");
+                            System.out.println(mob.getDescription() );
 
                             input = in.nextLine();
                             input = input.toLowerCase();
@@ -274,7 +273,7 @@ public class Main {
                                 command = input.split(" ");
                                 if (command[0].equals("battle") || command[0].equals("b")) {
                                     while (!(player.getHealth() <= 0 || mob.getHealth() <= 0)) {
-                                        System.out.print(codeName + "                HP  " + player.getHealth());
+                                        System.out.print(codename + "                HP  " + player.getHealth());
                                         if (player.getArmor() > 0) {
                                             System.out.println("/" + player.getArmor());
                                         } else {
@@ -338,9 +337,8 @@ public class Main {
                                                 command = input.split(" ");
                                                 if (command[0].equals("continue") || command[0].equals("c")) {
                                                     if (player.getLife() > 0) {
-                                                        player.setLocation("1");
+                                                        player.setLocation("0");
                                                         player.setHealth(player.getMaxhealth());
-                                                        System.out.println("Hello " + codeName.toUpperCase() + '\n');
                                                         System.out.print(rooms.get(player.getLocation()).getName());
                                                         if (!flags.contains(rooms.get(player.getLocation()).getId())) {
                                                             System.out.println(" not visited" + '\n');
@@ -408,9 +406,8 @@ public class Main {
                                                     command = input.split(" ");
                                                     if (command[0].equals("continue") || command[0].equals("c")) {
                                                         if (player.getLife() > 0) {
-                                                            player.setLocation("1");
+                                                            player.setLocation("0");
                                                             player.setHealth(player.getMaxhealth());
-                                                            System.out.println("Hello " + codeName.toUpperCase() + '\n');
                                                             System.out.print(rooms.get(player.getLocation()).getName());
                                                             if (!flags.contains(rooms.get(player.getLocation()).getId())) {
                                                                 System.out.println(" not visited" + '\n');

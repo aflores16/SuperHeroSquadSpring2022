@@ -21,7 +21,7 @@ public class Player {
         health_ = health;
         attack_ = attack;
         life_ = life;
-        location_ = "1";
+        location_ = "0";
         maxhealth_ = health;
         baseatt_ = attack;
         armor_ = 0;

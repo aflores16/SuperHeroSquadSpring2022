@@ -1,7 +1,7 @@
 Gravelord Nito
 1
 food,armor
-6
+2
 4000
 0
 200
