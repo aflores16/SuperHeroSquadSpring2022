@@ -1,13 +1,324 @@
-Gravelord Nito
 1
-food,armor
+engine room
+Lower 6
+15
+5
+8
+100
+key card
+75
+Food
+This seems to
+be one of
+Victor’s
+Lower 6. He
+probably has
+information
+on him. 
+END
 2
-4000
+State Room 2
+Lower 5 
+20
+7
+10
+100
+keycard
+80
+Food
+There is the
+Lower 5.
+Looks like
+the Lower 6
+wasn’t lying.
+Time to get
+some more
+info.
+END 
+3
+Upper Pool Deck
+Lower 4
+30
+8
+13
+100
+key card
+82
+Food
+The Lower 4.
+He seems 
+stronger than
+the previous
+two. You
+should be on
+your guard.
+END
+4
+Ocean View Room 1
+Lower 3
+45
+8
+14
+100
+key card
+85
+Food
+The Lower 3.
+He doesn’t
+seem to be
+too much
+stronger than
+the ones before, but you
+should be
+careful.
+END
+5
+Night Club
+Lower 2
+50
+9
+14
+100
+key card
+88
+Food
+This guy
+seems to be
+similar in
+strengthen to
+the Lower 3. 
+END
+6
+Captains Cabin
+Lower 1
+55
+10
+14
+100
+key card
+90
+Food 
+He is the
+strongest out
+of the 6. You
+need to be
+careful. You
+realize that
+defeating this
+guy will give
+you the location to Victor.
+END
+8
+Crew Cabing 1
+Crew Mate
+10
+7
+7
 0
-200
-250
-1.00
-Holder of one of the four Lord Souls, Gravelord Nito was among the lords to wage war against
-the dragons. As the Lord of Death, Nito rules over the dead in The Catacombs and resides within
-the Tomb of Giants.
+none
+20
+Food
+A simple
+crew mate. 
+END
+9
+Engine Room
+Lacky
+10
+5
+5
+0
+none
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+10
+Crew Cabin 1
+Lacky
+10
+5
+5
+0
+none
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+11
+State Room 1
+Lacky
+10
+5
+5
+0
+none
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+12
+Crew Cabin 2
+Lacky
+10
+5
+5
+0
+none
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+13
+State Room 2
+Lacky
+10
+5
+5
+0
+none
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+14
+Lower Deck Pool
+Lacky
+10
+5
+5
+0
+none
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+15
+OceanView Room 1
+Lacky
+10
+5
+5
+0
+none
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+16
+Fitness Center
+Lacky
+10
+5
+5
+0
+none
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+17
+Upper Deck Pool
+Lacky
+10
+5
+5
+0
+none
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+18
+Captain Cabin
+Lacky
+10
+5
+5
+0
+none
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+19
+OceanView Room 2
+Lacky
+10
+5
+5
+0
+none
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+20
+Casino
+Lacky
+10
+5
+5
+0
+none
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+21
+Night Club
+Lacky
+10
+5
+5
+0
+none
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+22
+Comedy Club
+Lacky
+10
+5
+5
+0
+none
+30
+Ammo
+One of Victor’s Lackies.
+Nothing special. 
+END
+23
+Bridge
+Victor
+1
+175
+175
+0
+none
+15
+none
+There is your
+target. Victor
+has been terrorizing this
+part of the
+solar system
+for too long.
+Take him
+out. 
 END
