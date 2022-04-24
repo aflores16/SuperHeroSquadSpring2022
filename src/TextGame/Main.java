@@ -506,6 +506,24 @@ public class Main {
                             }
                         }
                     }
+                } else if (command[0].equals("help") || command[0].equals("h")) {
+                	System.out.println("---------------------Command Menu---------------------------");
+					System.out.println("Look: This will show the description of the current room.");
+					System.out.println("Navigation: North, South, West, East is used to travel between rooms");
+					System.out.println("Unlock: unlocks door if key is present in inventory");
+					System.out.println("Drop: This will drop an item in your current inventory");
+					System.out.println("Get: This will pick up any item in current room");
+					System.out.println("Inspect : this will look at an item description");
+					System.out.println("Equip: Allows to equip items to player hands");
+					System.out.println("Unequip: put item back in their inventory");
+					System.out.println("Reload: reload guns");
+					System.out.println("Examine: Examine monster to encounter battle");
+					System.out.println("Battle: Fight the monster to battle");
+					System.out.println("Ignore: Ignore monster to avoid battle");
+					System.out.println("Attack: Attack the monster in a battle");
+					System.out.println("Heal : This will heal player health ");
+					System.out.println("Wear: equip armor items to increase defense");
+					System.out.println("Quit: This will quit the game without saving the game");
                 } else if (command[0].equals("quit") || command[0].equals("q")) {
                     System.out.println("Thank you for playing!");
                     again = false;
