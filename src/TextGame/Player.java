@@ -289,25 +289,41 @@ public class Player {
 
         if (direction.equals("north") || direction.equals("n")) {
             if (!temp[0].equals("-")) {
-                location_ = temp[0];
+                if (temp[0].contains("/")) {
+                    System.out.println("Sorry, this way is locked, try again!" + '\n');
+                } else {
+                    location_ = temp[0];
+                }
             } else {
                 System.out.println("Sorry, cannot go this way, try again!" + '\n');
             }
         } else if (direction.equals("south") || direction.equals("s")) {
             if (!temp[1].equals("-")) {
-                location_ = temp[1];
+                if (temp[1].contains("/")) {
+                    System.out.println("Sorry, this way is locked, try again!" + '\n');
+                } else {
+                    location_ = temp[1];
+                }
             } else {
                 System.out.println("Sorry, cannot go this way, try again!" + '\n');
             }
         } else if (direction.equals("east") || direction.equals("e")) {
             if (!temp[2].equals("-")) {
-                location_ = temp[2];
+                if (temp[2].contains("/")) {
+                    System.out.println("Sorry, this way is locked, try again!" + '\n');
+                } else {
+                    location_ = temp[2];
+                }
             } else {
                 System.out.println("Sorry, cannot go this way, try again!" + '\n');
             }
         } else if (direction.equals("west") || direction.equals("w")) {
             if (!temp[3].equals("-")) {
-                location_ = temp[3];
+                if (temp[3].contains("/")) {
+                    System.out.println("Sorry, this way is locked, try again!" + '\n');
+                } else {
+                    location_ = temp[3];
+                }
             } else {
                 System.out.println("Sorry, cannot go this way, try again!" + '\n');
             }
@@ -372,10 +388,6 @@ public class Player {
         } else {
             System.out.println("Sorry, " + item + " is not in your inventory." + '\n');
         }
-    }
-
-    public String getInventory_() {
-        return inventory_.get(getInventory_()).getId();
     }
 
     public Map<String, Item> getInventory() {

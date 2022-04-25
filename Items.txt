@@ -1,6 +1,6 @@
 Plasma Pistol
 A01
-R04
+4
 Gun/Weapon
 1
 0
@@ -11,49 +11,49 @@ Gun/Weapon
 0.00
 1.00
 A futuristic handgun that shoots plasma. Neat!
-This weapon is used to shoot or melee monsters. 
+This weapon is used to shoot monsters.
 END
-Laser Riffle
+Laser Rifle
 A02
-R18
+18
 Gun/Weapon
 1
 0
 0
 1
 8
-10
+20
 0.00
 1.00
 A precision laser rifle. In the right hands, this becomes a deadly weapon.
-This weapon is used to shoot or melee monsters. 
+This weapon is used to shoot monsters.
 END
 Riot Shotgun
 A03
-R11
+11
 Gun/Weapon
 1
 0
 0
 1
 15
-10
+5
 0.00
 1.00
 Who needs good aim when you’ve got a shotgun?
-This weapon is used to attack monsters
+This weapon is used to shoot monsters.
 END
-Hors d'œuvre
+Hors D'oeuvre
 A04
-R13
+13
 Food
 1
 0
 0
 1
 2
-1v0
-0.00
+0
+0.10
 1.00
 A ham sandwich cut into forty pieces. Most delectable.
 It is consumable, and it used to restore health points
@@ -100,40 +100,40 @@ Armor Buff
 10
 0.00
 1.00
-Extra protection 
 It is wearable, and it is used to give player armor points 
 END
 Gold
 A08
 R03
+Currency
 1
 0
 0
-1
-2
-10
+5
+0
+0
 0.00
 1.00
-Currency
 It is pickable, and it is used to purchase items from the trader
 END
 Engine Room Keycard 
 A09
 R02
+Key
 1
 0
 0
 1
-2
-10
+0
+0
 0.00
 1.00
-Room Access 
-This keycard goes to a door. Use it to unlock the engine room door
+This keycard goes to a door.
 END
 Stateroom 2 Keycard 
 A10
 R06
+Key
 1
 0
 0
@@ -142,12 +142,12 @@ R06
 10
 0.00
 1.00
-Room Access 
-This keycard goes to a door. Use it to unlock Stateroom 2’s Door
+This keycard goes to a door.
 END
 Upper Pool Deck Keycard 
 A11
 R19
+Key
 1
 0
 0
@@ -156,12 +156,12 @@ R19
 10
 0.00
 1.00
-Room Access 
-This keycard goes to a door. Use it to unlock Upper Pool Deck’s Door
+This keycard goes to a door.
 END
 Oceanview room 1 Keycard 
 A12
 R13
+Key
 1
 0
 0
@@ -170,12 +170,12 @@ R13
 10
 0.00
 1.00
-Room Access 
-This keycard goes to a door. Use it to unlock Oceanview Room 1’s Door
+This keycard goes to a door.
 END
 Nightclub Keycard 
 A13
 R22
+Key
 1
 0
 0
@@ -184,12 +184,12 @@ R22
 10
 0.00
 1.00
-Room Access 
-This keycard goes to a door. Use it to unlock Nightclub’s Door
+This keycard goes to a door.
 END
 Captain Cabin Keycard 
 A14
 R19
+Key
 1
 0
 0
@@ -198,12 +198,12 @@ R19
 10
 0.00
 1.00
-Room Access 
-This keycard goes to a door. Use it to unlock Captain’s Cabin Door
+This keycard goes to a door.
 END
 Bridge Keycard 
 A15
 R28
+Key
 1
 0
 0
@@ -212,12 +212,12 @@ R28
 10
 0.00
 1.00
-Room Access 
-This keycard goes to a door. Use it to unlock the Final Boss Room in the Bridge
+This keycard goes to a door.
 END
 Universal Ammo
 A16
 R02
+Ammo
 1
 0
 0
@@ -226,7 +226,6 @@ R02
 10
 0.00
 1.00
-Ammo
 It is pickable and can be used for any gun
 END
 Kevlar Vest
@@ -241,12 +240,12 @@ Armor Buff
 10
 0.00
 1.00
-Extra protection 
 It is wearable, and it is used to give player armor points 
 END
 Universal Ammo
 A18
 R05
+Ammo
 1
 0
 0
@@ -255,20 +254,19 @@ R05
 10
 0.00
 1.00
-Ammo
 It is pickable and can be used for any gun
 END
 Gold
 A08
 R06
+Currency
 1
 0
 0
-1
-2
-10
+5
+0
+0
 0.00
 1.00
-Currency
 It is pickable, and it is used to purchase items from the trader
 END

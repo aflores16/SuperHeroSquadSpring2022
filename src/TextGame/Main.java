@@ -40,7 +40,7 @@ public class Main {
                 input = input.toLowerCase();
                 String[] command = input.split(" ");
 
-                if (command[0].equals("get") || (command[0].contains("g"))) {
+                if (command[0].equals("get") || (command[0].equals("g"))) {
 
                     if (command.length >= 2) {
                         String temp = "";
@@ -57,7 +57,7 @@ public class Main {
                         System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                     }
 
-                } else if (command[0].equals("drop") || (command[0].contains("d"))) {
+                } else if (command[0].equals("drop") || (command[0].equals("d"))) {
 
                     if (command.length >= 2) {
                         String temp = "";
@@ -73,7 +73,7 @@ public class Main {
                         System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                     }
 
-                } else if (command[0].equals("unlock") || (command[0].equals("c") || (command[0].contains("unl")) )) {
+                } else if (command[0].equals("unlock") || (command[0].equals("c"))) {
 
                     if (command.length == 1) {
 
@@ -83,7 +83,7 @@ public class Main {
                         System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                     }
 
-                } else if (command[0].equals("reload") || (command[0].contains("rel"))) {
+                } else if (command[0].equals("reload") || (command[0].equals("r"))) {
 
                     if (command.length == 1) {
 
@@ -92,7 +92,7 @@ public class Main {
                         System.out.println("Ammo not found/doesn't exist, please try again!" + '\n');
                     }
 
-                } else if (command[0].equals("equip") || (command[0].equals("x")) || (command[0].contains("eq"))) {
+                } else if (command[0].equals("equip") || (command[0].equals("x"))) {
 
                     if (command.length >= 2) {
                         String temp = "";
@@ -107,7 +107,7 @@ public class Main {
                         System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                     }
 
-                } else if (command[0].equals("unequip") || (command[0].equals("u")) || command[0].contains("uneq")) {
+                } else if (command[0].equals("unequip") || (command[0].equals("u"))) {
 
                     if (command.length == 1) {
 
@@ -116,7 +116,7 @@ public class Main {
                         System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                     }
 
-                }else if (command[0].equals("inspect") || (command[0].equals("i")) || (command[0].contains("insp"))) {
+                }else if (command[0].equals("inspect") || (command[0].equals("i"))) {
 
                     if (command.length >= 2) {
                         String temp = "";
@@ -132,7 +132,7 @@ public class Main {
                         System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                     }
 
-                } else if (command[0].equals("wear") || (command[0].equals("f")) || command[0].contains("we")) {
+                } else if (command[0].equals("wear") || (command[0].equals("f"))) {
 
                     if (command.length == 1) {
 
@@ -141,7 +141,7 @@ public class Main {
                         System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                     }
 
-                } else if (command[0].equals("heal") || (command[0].equals("h")) || (command[0].contains("h"))) {
+                } else if (command[0].equals("heal") || (command[0].equals("h"))) {
 
                     if (command.length >= 2) {
                         String temp = "";
@@ -156,7 +156,7 @@ public class Main {
                         System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                     }
 
-                } else if (command[0].equals("look") || (command[0].equals("l")) || (command[0].contains("l"))) {
+                } else if (command[0].equals("look") || (command[0].equals("l"))) {
 
                     if (command.length >= 2) {
                         String temp = "";
@@ -194,11 +194,11 @@ public class Main {
                         System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                     }
 
-                } else if (command[0].equals("journal") || (command[0].equals("j")) || (command[0].contains("jour"))) {
+                } else if (command[0].equals("journal") || (command[0].equals("j"))) {
 
                     player.getJournal();
 
-                } else if (command[0].equals("backpack") || (command[0].equals("b")) || (command[0].contains("backp"))) {
+                } else if (command[0].equals("backpack") || (command[0].equals("b"))) {
 
                     player.getBackpack();
 
@@ -480,7 +480,7 @@ public class Main {
                                                 System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                                             }
 
-                                        } else if (command[0].equals("heal") || (command[0].contains("heal"))) {
+                                        } else if (command[0].equals("heal") || (command[0].equals("h"))) {
 
                                             if (command.length >= 2) {
                                                 String temp = "";
@@ -495,7 +495,7 @@ public class Main {
                                                 System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                                             }
 
-                                        } else if (command[0].equals("look") || (command[0].contains("l"))) {
+                                        } else if (command[0].equals("look") || (command[0].equals("l"))) {
 
                                             if (command.length >= 2) {
                                                 String temp = "";
@@ -533,7 +533,7 @@ public class Main {
                                             } else {
                                                 System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                                             }
-                                        } else if (command[0].equals("backpack") || (command[0].equals("b")) || (command[0].contains("b"))) {
+                                        } else if (command[0].equals("backpack") || (command[0].equals("b"))) {
 
                                         player.getBackpack();
 
@@ -543,7 +543,7 @@ public class Main {
 
                                     }
 
-                                } else if (command[0].equals("ignore") || command[0].contains("i")) {
+                                } else if (command[0].equals("ignore") || command[0].equals("i")) {
 
                                     System.out.print(rooms.get(player.getLocation()).getName());
 

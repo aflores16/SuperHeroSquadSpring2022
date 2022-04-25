@@ -4,8 +4,12 @@
     <list default="true" id="ac68d850-ee5f-499a-866a-7dd3ab6e9dd8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Items.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Items.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Monsters.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Monsters.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rooms.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Rooms.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/TextGame/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/TextGame/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/TextGame/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/TextGame/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/TextGame/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/TextGame/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/TextGame/Read.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/TextGame/Read.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/TextGame/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/TextGame/Room.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TextGame/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextGame/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TextGame/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextGame/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TextGame/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextGame/Player.java" afterDir="false" />
