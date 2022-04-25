@@ -15,6 +15,7 @@ public class Main {
         ArrayList <String> flags = new ArrayList <String>();
         ArrayList <String> pflags = new ArrayList <String>();
         ArrayList <String> mflags = new ArrayList <String>();
+        ArrayList <String> visitedRooms = new ArrayList <String>();
         Integer currentAttempt;
         Boolean doubleatt = false;
 
@@ -166,6 +167,7 @@ public class Main {
                         }
                         temp = temp.trim();
                         System.out.print(rooms.get(player.getLocation()).getName());
+                        visitedRooms.add(rooms.get(player.getLocation()).getName());
 
                         if (!flags.contains(rooms.get(player.getLocation()).getId())) {
                             System.out.println(" not visited" + '\n');
@@ -582,8 +584,13 @@ public class Main {
 					System.out.println("Attack: Attack the monster in a battle");
 					System.out.println("Heal : This will heal player health ");
 					System.out.println("Wear: equip armor items to increase defense");
+					System.out.println("Save: This will save the game");
 					System.out.println("Quit: This will quit the game without saving the game");
-                } else if (command[0].equals("quit") || command[0].equals("q")) {
+                } else if (command[0].equals("save") || command[0].equals("sa")) {
+                   save(visitedRooms, player, rooms);
+
+                }
+                else if (command[0].equals("quit") || command[0].equals("q")) {
                     System.out.println("Thank you for playing!");
                     again = false;
 
@@ -606,4 +613,32 @@ public class Main {
 
         }
     }
+
+    public static void save(ArrayList<String> visitedRooms, Player player, HashMap<String, Room> rooms ) {
+    	   try {
+               FileOutputStream fos = new FileOutputStream("Save.bat");
+               ObjectOutput object = new ObjectOutputStream(fos);
+
+               //Save Visited rooms
+               object.writeObject("Visited Rooms");
+               object.writeObject(visitedRooms);
+
+               //save current room.... This should also have the puzzle object
+               object.writeObject("Current Room");
+               Room r = rooms.get(player.getLocation());
+               object.writeObject(r);
+
+               //save player 
+               object.writeObject("Player");
+               object.writeObject(player);
+
+               object.flush();
+               object.close();
+               System.out.println("Game is saved");
+
+           } catch (Exception ex){
+               System.out.println("Serialization Error! Can't sava data.");
+           }
+    }
+
 }

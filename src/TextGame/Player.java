@@ -1,8 +1,9 @@
 package TextGame;
 
+import java.io.Serializable;
 import java.util.*;
 
-public class Player {
+public class Player implements Serializable  {
 
     private static String location_;
     private static String equipname_;
