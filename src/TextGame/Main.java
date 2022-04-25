@@ -303,7 +303,7 @@ public class Main {
                                             player.attack(rooms);
                                             if (mob.getHealth() <= 0) {
                                                 mflags.add(rooms.get(player.getLocation()).getId());
-                                                System.out.println("GREAT ENEMY FELLED" + '\n');
+                                                System.out.println("You killed " + mob.getName() + "." + '\n');
                                                 for (int i = 0; i < mob.getItems().length; i++) {
                                                     Room room = rooms.get(player.getLocation());
                                                     System.out.print(mob.getItems()[i] + ", ");
@@ -327,10 +327,12 @@ public class Main {
 
                                             } else if (player.getHealth() <= 0) {
                                                 player.setLife(player.getLife() - 1);
-                                                System.out.println("YOU DIED" + '\n');
+                                                System.out.println("You died..." + '\n');
                                                 System.out.println("Life: " + player.getLife());
                                                 if (player.getLife() > 0) {
                                                     System.out.println("Type continue or c to continue this game");
+                                                } else {
+                                                    System.out.println("You failed your mission, " + codename + "...");
                                                 }
                                                 System.out.println("Type start or s to start a new game");
                                                 System.out.println("Type quit or q to quit the game");
@@ -372,7 +374,7 @@ public class Main {
                                                 player.shoot(rooms);
                                                 if (mob.getHealth() <= 0) {
                                                     mflags.add(rooms.get(player.getLocation()).getId());
-                                                    System.out.println("GREAT ENEMY FELLED" + '\n');
+                                                    System.out.println("You killed " + mob.getName() + "." + '\n');
                                                     for (int i = 0; i < mob.getItems().length; i++) {
                                                         Room room = rooms.get(player.getLocation());
                                                         System.out.print(mob.getItems()[i] + ", ");
@@ -400,7 +402,9 @@ public class Main {
                                                     System.out.println("Life: " + player.getLife());
                                                     if (player.getLife() > 0) {
                                                         System.out.println("Type continue or c to continue this game");
-                                                    }
+                                                    } else {
+                                                    System.out.println("You failed your mission, " + codename + "...");
+													}
                                                     System.out.println("Type start or s to start a new game");
                                                     System.out.println("Type quit or q to quit the game");
                                                     input = in.nextLine();
