@@ -19,6 +19,11 @@ public class Main {
         Integer currentAttempt;
         Boolean doubleatt = false;
 
+        try{
+            Thread.sleep(10000);
+        } catch (InterruptedException e){
+            System.err.println(e.getMessage());
+        }
 
         try (Scanner in = new Scanner(System.in)) {
             System.out.println('\n' + "Enter your codename:" + '\n');
