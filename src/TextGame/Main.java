@@ -41,6 +41,10 @@ public class Main {
                 input = input.toLowerCase();
                 String[] command = input.split(" ");
 
+		if(!visitedRooms.contains(rooms.get(player.getLocation()).getName()))
+                {
+                	 visitedRooms.add(rooms.get(player.getLocation()).getName());
+                }
                 if (command[0].equals("get") || (command[0].equals("g"))) {
 
                     if (command.length >= 2) {
@@ -593,7 +597,31 @@ public class Main {
                 } else if (command[0].equals("save") || command[0].equals("sa")) {
                    save(visitedRooms, player, rooms);
 
-                }
+                } else if (command[0].equals("load") || command[0].equals("l")) {
+                	System.out.println("Loading from saved file...");
+                	try {
+	                	FileInputStream fis = new FileInputStream("Save.bat");
+	                    ObjectInput object = new ObjectInputStream(fis);
+	                    var line = object.readObject();
+	                    visitedRooms = new ArrayList<String>();
+	                    for(Object o: Arrays.asList(line)) {
+	                    	visitedRooms.add(o.toString());
+	                    }
+
+	                    line = object.readObject();
+	                    Room r = (Room)line;
+	                    
+	                    line = object.readObject();
+	                    player = (Player)line;
+	                    System.out.println(rooms.get(player.getLocation()).getName());
+	                    object.close();
+	                    System.out.println("Game is loaded from file.");
+                	} catch(Exception ex) {
+                		 System.out.println("Can't read data.");
+                	}
+                	
+
+                 }
                 else if (command[0].equals("quit") || command[0].equals("q")) {
                     System.out.println("Thank you for playing!");
                     again = false;
@@ -620,20 +648,15 @@ public class Main {
 
     public static void save(ArrayList<String> visitedRooms, Player player, HashMap<String, Room> rooms ) {
     	   try {
-               FileOutputStream fos = new FileOutputStream("Save.bat");
+              FileOutputStream fos = new FileOutputStream("Save.bat");
                ObjectOutput object = new ObjectOutputStream(fos);
 
-               //Save Visited rooms
-               object.writeObject("Visited Rooms");
                object.writeObject(visitedRooms);
-
                //save current room.... This should also have the puzzle object
-               object.writeObject("Current Room");
                Room r = rooms.get(player.getLocation());
                object.writeObject(r);
 
                //save player 
-               object.writeObject("Player");
                object.writeObject(player);
 
                object.flush();
