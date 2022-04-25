@@ -275,19 +275,19 @@ public class Main {
                                 command = input.split(" ");
                                 if (command[0].equals("battle") || command[0].equals("b")) {
                                     while (!(player.getHealth() <= 0 || mob.getHealth() <= 0)) {
-                                        System.out.print(codename + "                HP  " + player.getHealth());
+                                        System.out.print("HP " + player.getHealth() + "\t\t\t" + codename);
                                         if (player.getArmor() > 0) {
-                                            System.out.println("/" + player.getArmor());
+                                            System.out.println("/" + player.getArmor() + "\t\t\t" + codename);
                                         } else {
                                             System.out.println();
                                         }
                                         if (!player.getEquipment().isEmpty() && player.getEquipment().get(player.getEquipname()).getMag() > 0) {
-                                            System.out.println("                      ATK " + player.getAttack() + '\n');
+                                            System.out.println("ATK " + player.getAttack() + '\n');
                                         } else {
-                                            System.out.println("                      ATK " + player.getBaseatt() + '\n');
+                                            System.out.println("ATK " + player.getBaseatt() + '\n');
                                         }
-                                        System.out.println(mob.getName() + "        HP  " + mob.getHealth());
-                                        System.out.println("                      ATK " + mob.getAttack());
+                                        System.out.println("HP " + mob.getHealth() + "\t\t\t" + mob.getName());
+                                        System.out.println("ATK " + mob.getAttack());
                                         if (!player.getEquipment().isEmpty() && player.getEquipment().get(player.getEquipname()).getMag() > 0) {
                                             System.out.println("Type shoot or z to shoot the monster");
                                         }
