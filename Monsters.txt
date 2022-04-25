@@ -1,13 +1,142 @@
-Gravelord Nito
-1
-food,armor
-6
-4000
+Lower 6
+M01
+hors d'oeuvre,stateroom 2 Keycard
+2
+15
 0
-200
-250
+5
+8
 1.00
-Holder of one of the four Lord Souls, Gravelord Nito was among the lords to wage war against
-the dragons. As the Lord of Death, Nito rules over the dead in The Catacombs and resides within
-the Tomb of Giants.
+This seems to be one of Victor’s Lower 6. He
+probably has information on him.
+END
+Lower 5
+M02
+hors d'oeuvre,upper pool deck keycard
+6
+20
+0
+7
+10
+1.00
+There is the Lower 5. Looks like the Lower 6
+wasn’t lying. Time to get some more info.
+END
+Lower 4
+M03
+hors d'oeuvre,oceanview room 1 keycard
+18
+30
+0
+8
+13
+1.00
+The Lower 4. He seems stronger than the previous
+two. You should be on your guard.
+END
+Lower 3
+M04
+pizza,nightclub keycard
+13
+45
+0
+8
+14
+1.00
+The Lower 3. He doesn’t seem to be too much
+stronger than the ones before, but you
+should be careful.
+END
+Lower 2
+M05
+pizza,captain's cabin keycard
+22
+50
+0
+9
+14
+1.00
+This guy seems to be similar in
+strengthen to the Lower 3. 
+END
+Lower 1
+M06
+sushi roll,nightclub keycard
+19
+55
+0
+10
+14
+1.00
+He is the strongest out of the 6. You need to
+be careful. You realize that defeating this
+guy will give you the location to Victor.
+END
+Crew Mate
+M08
+hors d'oeuvre
+3
+10
+0
+7
+7
+1.00
+A simple crew mate
+END
+Lacky
+M09
+universal ammo
+5
+10
+0
+5
+5
+0.25
+One of Victor’s Lackies. Nothing special. 
+END
+Lacky
+M09
+universal ammo
+10
+10
+0
+5
+5
+0.75
+One of Victor’s Lackies. Nothing special. 
+END
+Lacky
+M09
+universal ammo
+14
+10
+0
+5
+5
+0.50
+One of Victor’s Lackies. Nothing special. 
+END
+Lacky
+M09
+universal ammo
+21
+10
+0
+5
+5
+0.40
+One of Victor’s Lackies. Nothing special. 
+END
+Victor
+M10
+
+28
+175
+0
+15
+15
+1.00
+There is your target. Victor has been terrorizing
+this part of the solar system for too long.
+Take him out.
 END
