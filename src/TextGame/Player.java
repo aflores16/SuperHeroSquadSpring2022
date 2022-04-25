@@ -119,7 +119,7 @@ public class Player implements Serializable  {
     }
 
     public void reload() {
-        String ammo = "ammo";
+        String ammo = "Universal Ammo";
         Item temp = null;
 
         if (inventory_.containsKey(ammo)) {
@@ -174,7 +174,7 @@ public class Player implements Serializable  {
     }
 
     public void wear() {
-        String armor = "armor";
+        String armor = "Kevlar Vest";
 
         if (inventory_.containsKey(armor)) {
             double buff = (((double)getMaxhealth()) * inventory_.get(armor).getValue());
@@ -256,21 +256,33 @@ public class Player implements Serializable  {
                 String[] neighbors = {current.getNeighbors()[0].substring(0,end), current.getNeighbors()[1], current.getNeighbors()[2], current.getNeighbors()[3]};
                 current.setNeighbors_(neighbors);
                 System.out.println("North was unlocked.");
+                journal_.remove(getKeyname());
+                System.out.println(getKeyname() + " was successfully removed from journal");
+                inventory_.remove(getKeyname());
             } else if (current.getNeighbors()[1].contains("/")) {
                 int end = current.getNeighbors()[1].indexOf("/");
                 String[] neighbors = {current.getNeighbors()[0], current.getNeighbors()[1].substring(0,end), current.getNeighbors()[2], current.getNeighbors()[3]};
                 current.setNeighbors_(neighbors);
                 System.out.println("South was unlocked.");
+                journal_.remove(getKeyname());
+                System.out.println(getKeyname() + " was successfully removed from journal");
+                inventory_.remove(getKeyname());
             } else if (current.getNeighbors()[2].contains("/")) {
                 int end = current.getNeighbors()[2].indexOf("/");
                 String[] neighbors = {current.getNeighbors()[0], current.getNeighbors()[1], current.getNeighbors()[2].substring(0,end), current.getNeighbors()[3]};
                 current.setNeighbors_(neighbors);
                 System.out.println("East was unlocked.");
+                journal_.remove(getKeyname());
+                System.out.println(getKeyname() + " was successfully removed from journal");
+                inventory_.remove(getKeyname());
             } else if (current.getNeighbors()[3].contains("/")) {
                 int end = current.getNeighbors()[3].indexOf("/");
                 String[] neighbors = {current.getNeighbors()[0], current.getNeighbors()[1], current.getNeighbors()[2], current.getNeighbors()[3].substring(0,end)};
                 current.setNeighbors_(neighbors);
                 System.out.println("West was unlocked.");
+                journal_.remove(getKeyname());
+                System.out.println(getKeyname() + " was successfully removed from journal");
+                inventory_.remove(getKeyname());
             } else {
                 System.out.println("Sorry, none of the doors are locked, try again!");
             }
@@ -343,7 +355,7 @@ public class Player implements Serializable  {
         if (current.getInventory().containsKey(item)) {
             temp = current.getInventory().get(item);
             if (temp.getRoomloot().equals("1")) {
-                if (rooms.get(location_).getPuzzle().get(location_).getName().equals(item)) {
+                if (rooms.get(location_).getPuzzle().get(location_).getName().equals(item) && rooms.get(location_).getPuzzle().get(location_).getPuzzle().equals("0")) {
                     journal_.put(item, rooms.get(location_).getPuzzle().get(location_));
                     System.out.println(item + " was successfully added to journal");
                     current.getInventory().remove(item);

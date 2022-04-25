@@ -54,7 +54,97 @@ Food
 0
 0
 0.10
-1.00
+0.75
+A ham sandwich cut into forty pieces. Most delectable.
+It is consumable, and it used to restore health points
+END
+Hors D'oeuvre
+A04
+14
+Food
+1
+0
+0
+1
+0
+0
+0.10
+0.50
+A ham sandwich cut into forty pieces. Most delectable.
+It is consumable, and it used to restore health points
+END
+Hors D'oeuvre
+A04
+21
+Food
+1
+0
+0
+1
+0
+0
+0.10
+0.30
+A ham sandwich cut into forty pieces. Most delectable.
+It is consumable, and it used to restore health points
+END
+Hors D'oeuvre
+A04
+2
+Food
+0
+1
+0
+1
+0
+0
+0.10
+0.75
+A ham sandwich cut into forty pieces. Most delectable.
+It is consumable, and it used to restore health points
+END
+Hors D'oeuvre
+A04
+6
+Food
+0
+1
+0
+1
+0
+0
+0.10
+0.80
+A ham sandwich cut into forty pieces. Most delectable.
+It is consumable, and it used to restore health points
+END
+Hors D'oeuvre
+A04
+18
+Food
+0
+1
+0
+1
+0
+0
+0.10
+0.82
+A ham sandwich cut into forty pieces. Most delectable.
+It is consumable, and it used to restore health points
+END
+Hors D'oeuvre
+A04
+3
+Food
+0
+1
+0
+1
+0
+0
+0.10
+0.20
 A ham sandwich cut into forty pieces. Most delectable.
 It is consumable, and it used to restore health points
 END
@@ -69,7 +159,52 @@ Food
 0
 0
 0.25
-1.00
+0.20
+Crabs are the answer
+It is consumable, and it used to restore health points
+END
+Pizza
+A05
+18
+Food
+1
+0
+0
+1
+0
+0
+0.25
+0.25
+Crabs are the answer
+It is consumable, and it used to restore health points
+END
+Pizza
+A05
+13
+Food
+0
+1
+0
+1
+0
+0
+0.25
+0.85
+Crabs are the answer
+It is consumable, and it used to restore health points
+END
+Pizza
+A05
+22
+Food
+0
+1
+0
+1
+0
+0
+0.25
+0.88
 Crabs are the answer
 It is consumable, and it used to restore health points
 END
@@ -84,7 +219,22 @@ Food
 0
 0
 0.40
-1.00
+0.75
+Fish are friends and food!
+It is consumable, and it used to restore health points
+END
+Sushi Roll
+A06
+19
+Food
+0
+1
+0
+1
+0
+0
+0.40
+0.90
 Fish are friends and food!
 It is consumable, and it used to restore health points
 END
@@ -102,6 +252,34 @@ Armor Buff
 1.00
 It is wearable, and it is used to give player armor points 
 END
+Kevlar Vest
+A07
+4
+Armor Buff
+1
+0
+0
+1
+0
+0
+0.30
+1.00
+It is wearable, and it is used to give player armor points
+END
+Gold
+A08
+2
+Currency
+1
+0
+0
+5
+0
+0
+0.00
+0.50
+It is pickable, and it is used to purchase items from the trader
+END
 Gold
 A08
 3
@@ -113,12 +291,138 @@ Currency
 0
 0
 0.00
-1.00
+0.50
+It is pickable, and it is used to purchase items from the trader
+END
+Gold
+A08
+5
+Currency
+1
+0
+0
+5
+0
+0
+0.00
+0.75
+It is pickable, and it is used to purchase items from the trader
+END
+Gold
+A08
+6
+Currency
+1
+0
+0
+5
+0
+0
+0.00
+0.25
+It is pickable, and it is used to purchase items from the trader
+END
+Gold
+A08
+10
+Currency
+1
+0
+0
+5
+0
+0
+0.00
+0.25
+It is pickable, and it is used to purchase items from the trader
+END
+Gold
+A08
+13
+Currency
+1
+0
+0
+5
+0
+0
+0.00
+0.50
+It is pickable, and it is used to purchase items from the trader
+END
+Gold
+A08
+14
+Currency
+1
+0
+0
+5
+0
+0
+0.00
+0.75
+It is pickable, and it is used to purchase items from the trader
+END
+Gold
+A08
+18
+Currency
+1
+0
+0
+5
+0
+0
+0.00
+0.75
+It is pickable, and it is used to purchase items from the trader
+END
+Gold
+A08
+21
+Currency
+1
+0
+0
+5
+0
+0
+0.00
+0.75
+It is pickable, and it is used to purchase items from the trader
+END
+Gold
+A08
+22
+Currency
+1
+0
+0
+5
+0
+0
+0.00
+0.50
+It is pickable, and it is used to purchase items from the trader
+END
+Gold
+A08
+24
+Currency
+1
+0
+0
+5
+0
+0
+0.00
+0.50
 It is pickable, and it is used to purchase items from the trader
 END
 Engine Room Keycard
 A09
-2
+4
 Key
 1
 0
@@ -130,12 +434,12 @@ Key
 1.00
 This keycard goes to a door.
 END
-Stateroom 2 Keycard
+Stateroom Keycard
 A10
-6
+2
 Key
-1
 0
+1
 0
 1
 0
@@ -146,10 +450,10 @@ This keycard goes to a door.
 END
 Upper Pool Deck Keycard
 A11
-19
+6
 Key
-1
 0
+1
 0
 1
 0
@@ -160,10 +464,10 @@ This keycard goes to a door.
 END
 Oceanview room 1 Keycard
 A12
-13
+18
 Key
-1
 0
+1
 0
 1
 0
@@ -174,10 +478,10 @@ This keycard goes to a door.
 END
 Nightclub Keycard
 A13
-22
+19
 Key
-1
 0
+1
 0
 1
 0
@@ -186,12 +490,12 @@ Key
 1.00
 This keycard goes to a door.
 END
-Captain Cabin Keycard
+Captain's Cabin Keycard
 A14
-19
+22
 Key
-1
 0
+1
 0
 1
 0
@@ -202,7 +506,7 @@ This keycard goes to a door.
 END
 Bridge Keycard
 A15
-28
+19
 Key
 1
 0
@@ -225,7 +529,189 @@ Ammo
 0
 0
 0.00
-1.00
+0.50
+It is pickable and can be used for any gun
+END
+Universal Ammo
+A16
+5
+Ammo
+1
+0
+0
+5
+0
+0
+0.00
+0.75
+It is pickable and can be used for any gun
+END
+Universal Ammo
+A16
+5
+Ammo
+1
+0
+0
+5
+0
+0
+0.00
+0.50
+It is pickable and can be used for any gun
+END
+Universal Ammo
+A16
+6
+Ammo
+1
+0
+0
+5
+0
+0
+0.00
+0.50
+It is pickable and can be used for any gun
+END
+Universal Ammo
+A16
+10
+Ammo
+1
+0
+0
+5
+0
+0
+0.00
+0.25
+It is pickable and can be used for any gun
+END
+Universal Ammo
+A16
+13
+Ammo
+1
+0
+0
+5
+0
+0
+0.00
+0.50
+It is pickable and can be used for any gun
+END
+Universal Ammo
+A16
+14
+Ammo
+1
+0
+0
+5
+0
+0
+0.00
+0.50
+It is pickable and can be used for any gun
+END
+Universal Ammo
+A16
+18
+Ammo
+1
+0
+0
+5
+0
+0
+0.00
+0.50
+It is pickable and can be used for any gun
+END
+Universal Ammo
+A16
+21
+Ammo
+1
+0
+0
+5
+0
+0
+0.00
+0.30
+It is pickable and can be used for any gun
+END
+Universal Ammo
+A16
+22
+Ammo
+1
+0
+0
+5
+0
+0
+0.00
+0.50
+It is pickable and can be used for any gun
+END
+Universal Ammo
+A16
+5
+Ammo
+0
+1
+0
+5
+0
+0
+0.00
+0.50
+It is pickable and can be used for any gun
+END
+Universal Ammo
+A16
+10
+Ammo
+0
+1
+0
+5
+0
+0
+0.00
+0.50
+It is pickable and can be used for any gun
+END
+Universal Ammo
+A16
+14
+Ammo
+0
+1
+0
+5
+0
+0
+0.00
+0.50
+It is pickable and can be used for any gun
+END
+Universal Ammo
+A16
+21
+Ammo
+0
+1
+0
+5
+0
+0
+0.00
+0.50
 It is pickable and can be used for any gun
 END
 Slot Machine

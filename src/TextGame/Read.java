@@ -13,7 +13,7 @@ class Read {
             HashMap<String, Room> rooms = new HashMap<String, Room>();
 
             while (line != null) {
-                String name = line.trim();
+                String name = line;
 
                 String id = reader.readLine().trim();
 
@@ -58,7 +58,7 @@ class Read {
             HashMap<String, Item> items = new HashMap<String, Item>();
 
             while (line != null) {
-                String name = line.trim();
+                String name = line;
 
                 name = name.toLowerCase();
 
@@ -138,6 +138,10 @@ class Read {
 
                 line = reader.readLine();
 
+                String puzzle = line.trim();
+
+                line = reader.readLine();
+
                 String attempt = line.trim();
 
                 line = reader.readLine();
@@ -149,7 +153,7 @@ class Read {
                     line = reader.readLine();
                 }
 
-                puzzles.put(location, new Puzzle(name, id, description, location, attempt));
+                puzzles.put(location, new Puzzle(name, id, puzzle, description, location, attempt));
 
                 line = reader.readLine();
 
@@ -174,7 +178,7 @@ class Read {
             while (line != null) {
                 String name = line;
 
-                String id = reader.readLine();
+                String id = reader.readLine().trim();
 
                 line = reader.readLine();
 

@@ -1,6 +1,6 @@
 Lower 6
 M01
-hors d'oeuvre,stateroom 2 Keycard
+hors d'oeuvre,stateroom keycard
 2
 15
 0

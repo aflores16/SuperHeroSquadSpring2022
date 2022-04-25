@@ -2,62 +2,70 @@ Engine Room Keycard
 PZ01
 4
 0
+0
 A simple Key Card where could it go to?
 It seems to have a holographic picture
 of what appears to be smoke. What room is this?
 END
-Stateroom 2 Keycard
+Stateroom Keycard
 PZ02
 2
 0
-You see that the Lower 6 has a 
+0
+You see that the Lower 6 has a
 keycard with what appears to be a lamp 
-and bed on it. It must unlock that room. 
+and bed on it. It must unlock that room.
 END
 Upper Pool Deck Keycard
 PZ03
 6
 0
-Like the previous Lower henchmen 
-you fought, the Lower 5 has a 
+0
+Like the previous Lower henchmen
+you fought, the Lower 5 has a
 keycard with what appears to be a pool.
 END
 Oceanview room 1 Keycard
 PZ04
 18
 0
-With the Lower 4 being defeated, you pick up his keycard. 
-Upon further examination, the card has an image of 
-windows with waves appearing on the outside of the room. 
+0
+With the Lower 4 being defeated, you pick up his keycard.
+Upon further examination, the card has an image of
+windows with waves appearing on the outside of the room.
 END
 Nightclub Keycard
 PZ05
 13
 0
-Lower 3 is now defeated and you know 
-you are getting closer. Picking up his 
-keycard you see it has people dancing 
-and a DJ in the background. 
+0
+Lower 3 is now defeated and you know
+you are getting closer. Picking up his
+keycard you see it has people dancing
+and a DJ in the background.
 END
 Captain's Cabin Keycard
 PZ06
 22
 0
-Lower 2 is finished. Only one more to go. 
+0
+Lower 2 is finished. Only one more to go.
 You pick up his keycard revealing.
 END
 Bridge Keycard
 PZ07
 19
 0
-This is what it has all led to. You pick up what 
-seems to be the last keycard which reveals an old 
-steering wheel. It has the letter V and protect, 
-etched into the bottom of the card.
+0
+This is what it has all led to. You pick up what
+seems to be the last keycard which reveals an old
+steering wheel. It has the letter V and protect,
+etched into the bottom of the card.
 END
 Up down left right
 PZ09
-2
+1
+1
 1
 There seems to be a stick attached to the chest reading:
 “4 directions in the right order opens what you seek.”

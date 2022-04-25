@@ -26,7 +26,7 @@ public class Main {
         }
 
         try (Scanner in = new Scanner(System.in)) {
-            System.out.println('\n' + "Enter your codename:" + '\n');
+            System.out.println('\n' + "Enter your codename:");
             String codename = in.nextLine();
             codename = codename.toUpperCase();
             System.out.println("You snuck aboard and landed in the");
@@ -219,22 +219,25 @@ public class Main {
                     player.move(command[0], rooms);
 
                     if (rooms.get(player.getLocation()).getPuzzle().containsKey(player.getLocation())) {
-                        currentAttempt = Integer.parseInt(rooms.get(player.getLocation()).getPuzzle().get(player.getLocation()).getAttempt());
-                        while (currentAttempt > 0 && !pflags.contains(rooms.get(player.getLocation()).getId())) {
-                            System.out.println(rooms.get(player.getLocation()).getPuzzle().get(player.getLocation()).getDescription());
-                            System.out.println("Current attempt left: " + currentAttempt + '\n');
-                            String Solution = rooms.get(player.getLocation()).getPuzzle().get(player.getLocation()).getName();
-                            input = in.nextLine();
-                            input = input.toLowerCase();
-                            command = input.split(" ");
-                            if (!command[0].equals(Solution)) {
-                                currentAttempt--;
-                            } else {
-                                System.out.println("Puzzle was Solved" + '\n');
-                                pflags.add(rooms.get(player.getLocation()).getId());
-
+                        if (!rooms.get(player.getLocation()).getPuzzle().get(player.getLocation()).getAttempt().equals("0")) {
+                            currentAttempt = Integer.parseInt(rooms.get(player.getLocation()).getPuzzle().get(player.getLocation()).getAttempt());
+                            while (currentAttempt > 0 && !pflags.contains(rooms.get(player.getLocation()).getId()) ) {
+                                System.out.println(rooms.get(player.getLocation()).getPuzzle().get(player.getLocation()).getDescription());
+                                System.out.println("Current attempt left: " + currentAttempt + '\n');
+                                String solution = rooms.get(player.getLocation()).getPuzzle().get(player.getLocation()).getName();
+                                input = in.nextLine();
+                                input = input.toLowerCase();
+                                if (!input.equals(solution)) {
+                                    currentAttempt--;
+                                    System.out.println("Invalid Solution");
+                                } else {
+                                    System.out.println("Puzzle was Solved" + '\n');
+                                    rooms.get(player.getLocation()).getPuzzle().remove(solution);
+                                    pflags.add(rooms.get(player.getLocation()).getId());
+                                }
                             }
                         }
+
                         System.out.print(rooms.get(player.getLocation()).getName());
 
                         if (!flags.contains(rooms.get(player.getLocation()).getId())) {
@@ -270,6 +273,7 @@ public class Main {
                         while (!mflags.contains(rooms.get(player.getLocation()).getId())) {
                             System.out.println(codename + " is fighting " + mob.getName() + ".");
                             System.out.println(mob.getDescription() );
+                            System.out.println("Type examine or m to examine the monster");
 
                             input = in.nextLine();
                             input = input.toLowerCase();
