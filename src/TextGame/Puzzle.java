@@ -1,7 +1,7 @@
 package TextGame;
+import java.io.Serializable;
 
-
-public class Puzzle {
+public class Puzzle implements Serializable{
     private String name_;
     private String id_;
     private String description_;
