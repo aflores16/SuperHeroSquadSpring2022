@@ -593,6 +593,7 @@ public class Main {
 					System.out.println("Heal : This will heal player health ");
 					System.out.println("Wear: equip armor items to increase defense");
 					System.out.println("Save: This will save the game");
+			                System.out.println("Load: This will load the game from saved file");
 					System.out.println("Quit: This will quit the game without saving the game");
                 } else if (command[0].equals("save") || command[0].equals("sa")) {
                    save(visitedRooms, player, rooms);
