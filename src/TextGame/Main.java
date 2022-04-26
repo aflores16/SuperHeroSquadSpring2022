@@ -319,7 +319,9 @@ public class Main {
                                                 System.out.println("You killed " + mob.getName() + "." + '\n');
                                                 for (int i = 0; i < mob.getItems().length; i++) {
                                                     Room room = rooms.get(player.getLocation());
-                                                    System.out.print(mob.getItems()[i] + ", ");
+                                                    if (room.getInventory().containsKey(mob.getItems()[i])) {
+                                                        System.out.print(mob.getItems()[i] + ", ");
+                                                    }
                                                     if (room.getInventory().containsKey(mob.getItems()[i])) {
                                                         room.getInventory().get(mob.getItems()[i]).setMobloot("0");
                                                         room.getInventory().get(mob.getItems()[i]).setRoomloot("1");
@@ -390,7 +392,9 @@ public class Main {
                                                     System.out.println("You killed " + mob.getName() + "." + '\n');
                                                     for (int i = 0; i < mob.getItems().length; i++) {
                                                         Room room = rooms.get(player.getLocation());
-                                                        System.out.print(mob.getItems()[i] + ", ");
+                                                        if (room.getInventory().containsKey(mob.getItems()[i])) {
+                                                            System.out.print(mob.getItems()[i] + ", ");
+                                                        }
                                                         if (room.getInventory().containsKey(mob.getItems()[i])) {
                                                             room.getInventory().get(mob.getItems()[i]).setMobloot("0");
                                                             room.getInventory().get(mob.getItems()[i]).setRoomloot("1");

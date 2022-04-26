@@ -203,8 +203,7 @@ public class Player implements Serializable  {
             setAttack(getAttack() + equipment_.get(item).getAttack());
             System.out.println("Attack damage of the player increased to " + getAttack());
             System.out.println(item + " was successfully equipped");
-            System.out.println("Type look <item name> to retrieve the description of the equipment and attack value");
-            System.out.println('\n');
+            System.out.println("Type look <item name> to retrieve the description of the equipment and attack value" + '\n');
         } else if (inventory_.containsKey(item) && (inventory_.get(item).getMag() == 0) && !inventory_.get(item).getAttack().equals(0) && equipment_.isEmpty()) {
             temp = inventory_.get(item);
 
