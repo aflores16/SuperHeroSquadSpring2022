@@ -298,7 +298,7 @@ public class Player implements Serializable  {
 
         String[] temp = current.getNeighbors();
 
-        if (direction.equals("north") || direction.equals("n")) {
+        if (direction.equals("north") || direction.equals("n") || direction.contains("no")) {
             if (!temp[0].equals("-")) {
                 if (temp[0].contains("/")) {
                     System.out.println("Sorry, this way is locked, try again!" + '\n');
@@ -308,7 +308,7 @@ public class Player implements Serializable  {
             } else {
                 System.out.println("Sorry, cannot go this way, try again!" + '\n');
             }
-        } else if (direction.equals("south") || direction.equals("s")) {
+        } else if (direction.equals("south") || direction.equals("s") || direction.contains("so")) {
             if (!temp[1].equals("-")) {
                 if (temp[1].contains("/")) {
                     System.out.println("Sorry, this way is locked, try again!" + '\n');
@@ -318,7 +318,7 @@ public class Player implements Serializable  {
             } else {
                 System.out.println("Sorry, cannot go this way, try again!" + '\n');
             }
-        } else if (direction.equals("east") || direction.equals("e")) {
+        } else if (direction.equals("east") || direction.equals("e") || direction.contains("e")) {
             if (!temp[2].equals("-")) {
                 if (temp[2].contains("/")) {
                     System.out.println("Sorry, this way is locked, try again!" + '\n');
@@ -328,7 +328,7 @@ public class Player implements Serializable  {
             } else {
                 System.out.println("Sorry, cannot go this way, try again!" + '\n');
             }
-        } else if (direction.equals("west") || direction.equals("w")) {
+        } else if (direction.equals("west") || direction.equals("w") || direction.contains("wes")) {
             if (!temp[3].equals("-")) {
                 if (temp[3].contains("/")) {
                     System.out.println("Sorry, this way is locked, try again!" + '\n');
