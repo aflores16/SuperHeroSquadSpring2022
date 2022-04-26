@@ -288,11 +288,11 @@ public class Main {
                                 command = input.split(" ");
                                 if (command[0].equals("battle") || command[0].equals("b")) {
                                     while (!(player.getHealth() <= 0 || mob.getHealth() <= 0)) {
-                                        System.out.print("HP " + player.getHealth() + "\t\t\t" + codename);
+                                        System.out.print("HP " + player.getHealth());
                                         if (player.getArmor() > 0) {
                                             System.out.println("/" + player.getArmor() + "\t\t\t" + codename);
                                         } else {
-                                            System.out.println();
+                                            System.out.println("\t\t\t" + codename);
                                         }
                                         if (!player.getEquipment().isEmpty() && player.getEquipment().get(player.getEquipname()).getMag() > 0) {
                                             System.out.println("ATK " + player.getAttack() + '\n');
@@ -304,7 +304,7 @@ public class Main {
                                         if (!player.getEquipment().isEmpty() && player.getEquipment().get(player.getEquipname()).getMag() > 0) {
                                             System.out.println("Type shoot or z to shoot the monster");
                                         }
-                                        if (!player.getEquipment().isEmpty() && player.containInventory("ammo") && player.getEquipment().get(player.getEquipname()).getMag() <  player.getEquipment().get(player.getEquipname()).getMaxmag()) {
+                                        if (!player.getEquipment().isEmpty() && player.containInventory("universal ammo") && player.getEquipment().get(player.getEquipname()).getMag() <  player.getEquipment().get(player.getEquipname()).getMaxmag()) {
                                             System.out.println("Type reload or r to shoot the monster");
                                         }
                                         System.out.println("Type attack or a to attack the monster");

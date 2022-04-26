@@ -7,14 +7,9 @@
     <list default="true" id="ac68d850-ee5f-499a-866a-7dd3ab6e9dd8" name="Changes" comment="Added the 10 second wait timie">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Items.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Items.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Monsters.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Monsters.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Player.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Player.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Puzzles.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Puzzles.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rooms.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Rooms.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TextGame/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextGame/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TextGame/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextGame/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TextGame/Puzzle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextGame/Puzzle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TextGame/Read.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextGame/Read.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

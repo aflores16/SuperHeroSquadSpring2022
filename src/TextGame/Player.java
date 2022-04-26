@@ -119,7 +119,7 @@ public class Player implements Serializable  {
     }
 
     public void reload() {
-        String ammo = "Universal Ammo";
+        String ammo = "universal ammo";
         Item temp = null;
 
         if (inventory_.containsKey(ammo)) {
@@ -174,7 +174,7 @@ public class Player implements Serializable  {
     }
 
     public void wear() {
-        String armor = "Kevlar Vest";
+        String armor = "kevlar vest";
 
         if (inventory_.containsKey(armor)) {
             double buff = (((double)getMaxhealth()) * inventory_.get(armor).getValue());
@@ -213,8 +213,7 @@ public class Player implements Serializable  {
             equipname_ = item;
             System.out.println("Attack damage of the player increased to " + getAttack());
             System.out.println(item + " was successfully equipped");
-            System.out.println("Type look <item name> to retrieve the description of the equipment and attack value");
-            System.out.println('\n');
+            System.out.println("Type look <item name> to retrieve the description of the equipment and attack value" + '\n');
         } else {
             System.out.println("Sorry, " + item + " is unable to be equipped" + '\n');
         }
@@ -443,7 +442,6 @@ public class Player implements Serializable  {
                 System.out.println(elt.getKey());
                 System.out.println(elt.getValue().getDescription());
             }
-            System.out.println();
         }
     }
 

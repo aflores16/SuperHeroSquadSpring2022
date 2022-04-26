@@ -714,6 +714,20 @@ Ammo
 0.50
 It is pickable and can be used for any gun
 END
+Universal Ammo
+A16
+4
+Ammo
+1
+0
+0
+5
+0
+0
+0.00
+1.00
+It is pickable and can be used for any gun
+END
 Slot Machine
 A17
 24
