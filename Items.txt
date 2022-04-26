@@ -478,7 +478,7 @@ This keycard goes to a door.
 END
 Nightclub Keycard
 A13
-19
+13
 Key
 0
 1
