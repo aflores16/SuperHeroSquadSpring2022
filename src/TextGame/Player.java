@@ -374,6 +374,21 @@ public class Player implements Serializable  {
         }
     }
 
+    public void addall(HashMap<String, Room> rooms) {
+
+        Room current = rooms.get(location_);
+
+        Item temp = null;
+
+        if (!current.getInventory().isEmpty()) {
+            inventory_.putAll(current.getInventory());
+            System.out.println("All the items was successfully added inventory");
+            System.out.println("Type inspect <item name> to retrieve the description of the item");
+        } else {
+            System.out.println("There is no items in the room");
+        }
+    }
+
     public void drop(String item, HashMap<String, Room> rooms) {
         Item temp = null;
 

@@ -48,11 +48,10 @@ public class Main {
                 String[] command = input.split(" ");
                 System.out.println();
 
-		if(!visitedRooms.contains(rooms.get(player.getLocation()).getName()))
-                {
+		        if(!visitedRooms.contains(rooms.get(player.getLocation()).getName())) {
                 	 visitedRooms.add(rooms.get(player.getLocation()).getName());
                 }
-		if (command[0].equals("get") || (command[0].equals("g")) || (command[0].contains("g"))) {
+		        if (command[0].equals("get") || (command[0].equals("g")) || (command[0].contains("ge"))) {
 
                     if (command.length >= 2) {
                         String temp = "";
@@ -63,6 +62,18 @@ public class Main {
                         temp = temp.trim();
 
                         player.add(temp, rooms);
+
+
+                    } else {
+                        System.out.println("Item not found/doesn't exist, please try again!" + '\n');
+                    }
+
+                } else if (command[0].equals("getall") || (command[0].equals("ga")) || (command[0].contains("geta"))) {
+
+                    if (command.length == 1) {
+
+
+                        player.addall(rooms);
 
 
                     } else {
