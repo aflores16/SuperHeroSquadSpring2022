@@ -51,7 +51,7 @@ public class Main {
 		        if(!visitedRooms.contains(rooms.get(player.getLocation()).getName())) {
                 	 visitedRooms.add(rooms.get(player.getLocation()).getName());
                 }
-		        if (command[0].equals("get") || (command[0].equals("g")) || (command[0].contains("ge"))) {
+		        if (command[0].equals("get") || (command[0].equals("g"))) {
 
                     if (command.length >= 2) {
                         String temp = "";
@@ -68,7 +68,7 @@ public class Main {
                         System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                     }
 
-                } else if (command[0].equals("getall") || (command[0].equals("ga")) || (command[0].contains("geta"))) {
+                } else if (command[0].equals("getall") || (command[0].equals("ga"))) {
 
                     if (command.length == 1) {
 
@@ -80,7 +80,7 @@ public class Main {
                         System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                     }
 
-                } else if (command[0].equals("drop") || (command[0].equals("d")) || command[0].contains("d")) {
+                } else if (command[0].equals("drop") || (command[0].equals("d"))) {
 
                     if (command.length >= 2) {
                         String temp = "";
@@ -96,7 +96,7 @@ public class Main {
                         System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                     }
 
-                } else if (command[0].equals("unlock") || (command[0].equals("c")) || (command[0].contains("unl"))) {
+                } else if (command[0].equals("unlock") || (command[0].equals("c"))) {
 
                     if (command.length == 1) {
 
@@ -106,7 +106,7 @@ public class Main {
                         System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                     }
 
-                } else if (command[0].equals("reload") || (command[0].equals("r")) || (command[0].contains("rel")) ) {
+                } else if (command[0].equals("reload") || (command[0].equals("r"))) {
 
                     if (command.length == 1) {
 
@@ -115,7 +115,7 @@ public class Main {
                         System.out.println("Ammo not found/doesn't exist, please try again!" + '\n');
                     }
 
-                } else if (command[0].equals("equip") || (command[0].equals("x")) || (command[0].contains("eq")) ) {
+                } else if (command[0].equals("equip") || (command[0].equals("x"))) {
 
                     if (command.length >= 2) {
                         String temp = "";
@@ -130,7 +130,7 @@ public class Main {
                         System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                     }
 
-                } else if (command[0].equals("unequip") || (command[0].equals("u")) || (command[0].contains("uneq"))) {
+                } else if (command[0].equals("unequip") || (command[0].equals("u"))) {
 
                     if (command.length == 1) {
 
@@ -139,7 +139,7 @@ public class Main {
                         System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                     }
 
-                }else if (command[0].equals("inspect") || (command[0].equals("i")) || (command[0].contains("insp")) ) {
+                }else if (command[0].equals("inspect") || (command[0].equals("i"))) {
 
                     if (command.length >= 2) {
                         String temp = "";
@@ -155,7 +155,7 @@ public class Main {
                         System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                     }
 
-                } else if (command[0].equals("wear") || (command[0].equals("f")) || (command[0].contains("wea"))) {
+                } else if (command[0].equals("wear") || (command[0].equals("v"))) {
 
                     if (command.length == 1) {
 
@@ -164,7 +164,7 @@ public class Main {
                         System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                     }
 
-                } else if (command[0].equals("heal") || (command[0].equals("h")) || (command[0].contains("hea"))) {
+                } else if (command[0].equals("heal") || (command[0].equals("h"))) {
 
                     if (command.length >= 2) {
                         String temp = "";
@@ -179,7 +179,7 @@ public class Main {
                         System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                     }
 
-                } else if (command[0].equals("look") || (command[0].equals("l")) || (command[0].contains("lo")) || (command[0].contains("sea"))) {
+                } else if (command[0].equals("look") || (command[0].equals("l"))) {
 
 
                     if (command.length >= 2) {
@@ -219,16 +219,15 @@ public class Main {
                         System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                     }
 
-                } else if (command[0].equals("journal") || (command[0].equals("j")) || (command[0].contains("jour"))) {
+                } else if (command[0].equals("journal") || (command[0].equals("j"))) {
 
                     player.getJournal();
 
-                } else if (command[0].equals("backpack") || (command[0].equals("b")) || (command[0].contains("backp"))) {
+                } else if (command[0].equals("backpack") || (command[0].equals("b"))) {
 
                     player.getBackpack();
                 } else if (command[0].equals("north") || command[0].equals("south") || command[0].equals("east") || command[0].equals("west") ||
-                        command[0].equals("n") || command[0].equals("s") || command[0].equals("e") || command[0].equals("w") ||
-                        command[0].contains("no") || command[0].contains("so") || command[0].contains("e") || command[0].contains("wes")) {
+                        command[0].equals("n") || command[0].equals("s") || command[0].equals("e") || command[0].equals("w")) {
 
                     player.move(command[0], rooms);
 
@@ -292,7 +291,7 @@ public class Main {
                             input = in.nextLine();
                             input = input.toLowerCase();
                             command = input.split(" ");
-                            if (command[0].equals("examine") || command[0].equals("m") || command[0].contains("exam")) {
+                            if (command[0].equals("examine") || command[0].equals("m")) {
                                 System.out.println(mob.getName() + '\n');
                                 System.out.println(mob.getDescription() + "The attack damage of monster is " + mob.getAttack());
                                 System.out.println("Type battle or b to battle the monster");
@@ -323,10 +322,11 @@ public class Main {
                                         }
                                         System.out.println("Type attack or a to attack the monster");
                                         System.out.println("Type heal or h to heal the player");
+                                        System.out.println("Type flee or f to flee from monster");
                                         input = in.nextLine();
                                         input = input.toLowerCase();
                                         command = input.split(" ");
-                                        if (command[0].equals("attack") || command[0].equals("a") || command[0].contains("att")) {
+                                        if (command[0].equals("attack") || command[0].equals("a")) {
                                             player.attack(rooms);
                                             if (mob.getHealth() <= 0) {
                                                 mflags.add(rooms.get(player.getLocation()).getId());
@@ -368,7 +368,7 @@ public class Main {
                                                 input = in.nextLine();
                                                 input = input.toLowerCase();
                                                 command = input.split(" ");
-                                                if (command[0].equals("continue") || command[0].equals("c") || command[0].contains("conti")) {
+                                                if (command[0].equals("continue") || command[0].equals("c")) {
                                                     if (player.getLife() > 0) {
                                                         player.setLocation("0");
                                                         player.setHealth(player.getMaxhealth());
@@ -386,19 +386,19 @@ public class Main {
                                                         System.out.println("Invalid command");
                                                     }
 
-                                                } else if (command[0].equals("start") || command[0].equals("s") || command[0].contains("st")) {
+                                                } else if (command[0].equals("start") || command[0].equals("s")) {
                                                     player.getInventory().clear();
                                                     player.getEquipment().clear();
                                                     Main.main(args);
 
-                                                } else if (command[0].equals("quit") || command[0].equals("q") || command[0].contains("q")) {
+                                                } else if (command[0].equals("quit") || command[0].equals("q")) {
                                                     System.out.println("Thank you for playing!");
                                                     again = false;
                                                 } else {
                                                     System.out.println("Invalid command");
                                                 }
                                             }
-                                        } else if (command[0].equals("shoot") || (command[0].equals("z")) || (command[0].contains("sh"))) {
+                                        } else if (command[0].equals("shoot") || (command[0].equals("z"))) {
                                             if (!player.getEquipment().isEmpty() && player.getEquipment().get(player.getEquipname()).getMag() > 0) {
                                                 player.shoot(rooms);
                                                 if (mob.getHealth() <= 0) {
@@ -441,7 +441,7 @@ public class Main {
                                                     input = in.nextLine();
                                                     input = input.toLowerCase();
                                                     command = input.split(" ");
-                                                    if (command[0].equals("continue") || command[0].equals("c") || command[0].contains("conti")) {
+                                                    if (command[0].equals("continue") || command[0].equals("c")) {
                                                         if (player.getLife() > 0) {
                                                             player.setLocation("0");
                                                             player.setHealth(player.getMaxhealth());
@@ -459,12 +459,12 @@ public class Main {
                                                             System.out.println("Invalid command");
                                                         }
 
-                                                    } else if (command[0].equals("start") || command[0].equals("s") || command[0].contains("st")) {
+                                                    } else if (command[0].equals("start") || command[0].equals("s")) {
                                                         player.getInventory().clear();
                                                         player.getEquipment().clear();
                                                         Main.main(args);
 
-                                                    } else if (command[0].equals("quit") || command[0].equals("q") || command[0].contains("q")) {
+                                                    } else if (command[0].equals("quit") || command[0].equals("q")) {
                                                         System.out.println("Thank you for playing!");
                                                         again = false;
                                                     } else {
@@ -475,7 +475,7 @@ public class Main {
                                                 System.out.println("The mag is empty. Please use the reload command before shooting.");
                                             }
 
-                                        } else if (command[0].equals("reload") || (command[0].equals("r")) || (command[0].contains("rel"))) {
+                                        } else if (command[0].equals("reload") || (command[0].equals("r"))) {
 
                                             if (command.length == 1) {
 
@@ -484,7 +484,21 @@ public class Main {
                                                 System.out.println("Ammo not found/doesn't exist, please try again!" + '\n');
                                             }
 
-                                        } else if (command[0].equals("equip") || (command[0].equals("x")) || (command[0].contains("eq"))) {
+                                        } else if (command[0].equals("flee") || (command[0].equals("f"))) {
+
+                                            System.out.print(rooms.get(player.getLocation()).getName());
+
+                                            if (!flags.contains(rooms.get(player.getLocation()).getId())) {
+                                                System.out.println(" not visited" + '\n');
+                                                flags.add(rooms.get(player.getLocation()).getId());
+                                            }else {
+                                                System.out.println(" visited" + '\n');
+                                            }
+                                            System.out.println(rooms.get(player.getLocation()).getDescription());
+                                            System.out.println("Type look or l to retrieve the description of the room");
+                                            continue GAME;
+
+                                        } else if (command[0].equals("equip") || (command[0].equals("x"))) {
 
                                             if (command.length >= 2) {
                                                 String temp = "";
@@ -499,7 +513,7 @@ public class Main {
                                                 System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                                             }
 
-                                        } else if (command[0].equals("unequip") || (command[0].equals("u")) || (command[0].contains("uneq"))) {
+                                        } else if (command[0].equals("unequip") || (command[0].equals("u"))) {
 
                                             if (command.length == 1) {
 
@@ -508,7 +522,7 @@ public class Main {
                                                 System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                                             }
 
-                                        } else if (command[0].equals("wear") || (command[0].equals("f")) || (command[0].contains("wea"))) {
+                                        } else if (command[0].equals("wear") || (command[0].equals("v"))) {
 
                                             if (command.length == 1) {
 
@@ -517,7 +531,7 @@ public class Main {
                                                 System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                                             }
 
-                                        } else if (command[0].equals("heal") || (command[0].equals("h")) || (command[0].contains("hea"))) {
+                                        } else if (command[0].equals("heal") || (command[0].equals("h"))) {
 
                                             if (command.length >= 2) {
                                                 String temp = "";
@@ -532,7 +546,7 @@ public class Main {
                                                 System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                                             }
 
-                                        } else if (command[0].equals("look") || (command[0].equals("l")) || (command[0].contains("loo")) || (command[0].contains("sea"))) {
+                                        } else if (command[0].equals("look") || (command[0].equals("l"))) {
 
                                             if (command.length >= 2) {
                                                 String temp = "";
@@ -570,7 +584,7 @@ public class Main {
                                             } else {
                                                 System.out.println("Item not found/doesn't exist, please try again!" + '\n');
                                             }
-                                        } else if (command[0].equals("backpack") || (command[0].equals("b") || (command[0].contains("backp")))) {
+                                        } else if (command[0].equals("backpack") || (command[0].equals("b"))) {
 
                                         player.getBackpack();
 
@@ -580,7 +594,7 @@ public class Main {
 
                                     }
 
-                                } else if (command[0].equals("ignore") || command[0].equals("i") || command[0].contains("ign")) {
+                                } else if (command[0].equals("ignore") || command[0].equals("i")) {
 
                                     System.out.print(rooms.get(player.getLocation()).getName());
 
@@ -602,7 +616,7 @@ public class Main {
                             }
                         }
                     }
-                } else if (command[0].equals("help") || command[0].equals("h") || command[0].contains("hel")) {
+                } else if (command[0].equals("help") || command[0].equals("h")) {
                 	System.out.println("---------------------Command Menu---------------------------");
 					System.out.println("Look: This will show the description of the current room.");
 					System.out.println("Navigation: North, South, West, East is used to travel between rooms");
@@ -625,7 +639,7 @@ public class Main {
                 } else if (command[0].equals("save") || command[0].equals("sa")) {
                    save(visitedRooms, player, rooms);
 
-                } else if (command[0].equals("load") || command[0].equals("l") || command[0].contains("loa")) {
+                } else if (command[0].equals("load") || command[0].equals("l")) {
                 	System.out.println("Loading from saved file...");
                 	try {
 	                	FileInputStream fis = new FileInputStream("Save.bat");
